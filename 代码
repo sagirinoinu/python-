@@ -1,0 +1,201 @@
+import pandas as pd
+import tkinter as tk
+import openpyxl
+
+# 读取excel文件
+df = pd.read_excel("python.xlsx")
+
+# 定义函数，实现检索功能
+# 实现检索功能
+def search():
+    # 获取输入框中的词牌名
+    keyword = entry.get()
+    # 存储所有符合条件的结果
+    results = []
+    # 在excel文件中检索
+    for index, row in df.iterrows():
+        name = str(row[0])
+        tagNmae = ""
+        i = 0
+        while name[i] != '·':
+            tagNmae += name[i]
+            i += 1
+        if tagNmae == keyword:
+            poetry = str(row[1])
+            poetry += '\n'
+            name += '\n'
+            author = str(row[2])
+            author += ' \n'
+            # 添加结果到列表中
+            results.append(name+author+poetry)
+    # 将所有结果拼接成一个字符串，用换行符分隔
+    output_text = '\n'.join(results)
+    # 更新输出标签
+    output.config(text=output_text)
+
+def byAuthor():
+    #按作者查询
+    key = entry.get()
+    results = []
+    # 在excel文件中检索
+    for index, row in df.iterrows():
+        author = str(row[2])
+        i = 0
+        j = 2
+        au = ""
+        s = len(author)
+        while j < s:
+            au += author[j]
+            j += 1
+        if au == key:
+            poetry = str(row[1])
+            poetry += '\n'
+            name = str(row[0])
+            name += '\n'
+            author += ' \n'
+            # 添加结果到列表中
+            results.append(name + author + poetry)
+    # 将所有结果拼接成一个字符串，用换行符分隔
+    output_text = '\n'.join(results)
+    # 更新输出标签
+    output.config(text=output_text)
+
+def feihualing():
+    #飞花令，输出第一首匹配的词
+    key = entry.get()
+    # 在excel文件中检索
+    for index, row in df.iterrows():
+        poetry = str(row[1])
+        if poetry.find(key) != -1:
+            poetry += '\n'
+            name = str(row[0])
+            name += '\n'
+            author = str(row[2])
+            author += ' \n'
+            # 添加结果到列表中
+            output.config(text=name+author+poetry)
+            break
+
+def bySentence():
+    key = entry.get()
+    results = []
+    # 在excel文件中检索
+    for index, row in df.iterrows():
+        poetry = str(row[1])
+        j = 2
+        sentence = ""
+        s = len(poetry)
+        while j < s:
+            if poetry[j] == '，' or poetry[j] == '。':
+                if sentence == key:
+                    name = str(row[0])
+                    name += '\n'
+                    author = str(row[2])
+                    author += '\n'
+                    poetry += '\n'
+                    results.append(name + author + poetry)
+                # 将当前句子加入结果列表，并清空sentence变量
+                sentence = ""
+            else:
+                sentence += poetry[j]
+            j += 1
+    # 将所有结果拼接成一个字符串，用换行符分隔
+    output_text = ''.join(results)
+    # 更新输出标签
+    output['text'] = output_text
+
+    def feihualing():
+        # 飞花令，输出所有匹配的词
+        key = entry.get()
+        output_text = ""
+        # 新建Excel文件
+        workbook = openpyxl.Workbook()
+        sheet = workbook.active
+        sheet.title = "Search Results"
+        sheet.cell(row=1, column=1, value="诗词名")
+        sheet.cell(row=1, column=2, value="诗词")
+        sheet.cell(row=1, column=3, value="作者")
+        # 在excel文件中检索
+        row = 2
+        for index, row_data in df.iterrows():
+            poetry = str(row_data[1])
+            if poetry.find(key) != -1:
+                poetry += '\n'
+                name = str(row_data[0])
+                name += '\n'
+                author = str(row_data[2])
+                author += ' \n'
+                # 添加结果到列表中
+                output_text += name + author + poetry
+                sheet.cell(row=row, column=1, value=name)
+                sheet.cell(row=row, column=2, value=poetry)
+                sheet.cell(row=row, column=3, value=author)
+                row += 1
+        # 保存Excel文件
+        workbook.save("search_results.xlsx")
+        output.config(text=output_text)
+
+def byword():
+    # 飞花令，输出所有匹配的词
+    key = entry.get()
+    output_text = ""
+    # 新建Excel文件
+    workbook = openpyxl.Workbook()
+    sheet = workbook.active
+    sheet.title = "Search Results"
+    sheet.cell(row=1, column=1, value="诗词名")
+    sheet.cell(row=1, column=2, value="诗词")
+    sheet.cell(row=1, column=3, value="作者")
+    # 在excel文件中检索
+    row = 2
+    for index, row_data in df.iterrows():
+        poetry = str(row_data[1])
+        if poetry.find(key) != -1:
+            poetry += '\n'
+            name = str(row_data[0])
+            name += '\n'
+            author = str(row_data[2])
+            author += ' \n'
+            # 添加结果到列表中
+            output_text += name + author + poetry
+            sheet.cell(row=row, column=1, value=name)
+            sheet.cell(row=row, column=2, value=poetry)
+            sheet.cell(row=row, column=3, value=author)
+            row += 1
+    # 保存Excel文件
+    workbook.save("按字检索结果.xlsx")
+    output.config(text=output_text)
+# 创建窗口
+window = tk.Tk()
+window.geometry('1000x500')
+window.title('诗词检索系统')
+
+# 创建输入框和按钮
+frame1 = tk.Frame(window)
+frame1.pack()
+label = tk.Label(frame1, text='输入框：', font=('Arial', 14))
+label.pack(side=tk.LEFT)
+entry = tk.Entry(frame1, font=('Arial', 14))
+entry.pack(side=tk.LEFT)
+button1 = tk.Button(frame1, text='按词牌名查询', command=search, font=('Arial', 14))
+button1.pack(side=tk.LEFT)
+
+button2 = tk.Button(frame1, text='按作者查询', command=byAuthor, font=('Arial', 14))
+button2.pack(side=tk.LEFT)
+
+button3 = tk.Button(frame1, text='飞花令', command=feihualing, font=('Arial', 14))
+button3.pack(side=tk.LEFT)
+
+button4 = tk.Button(frame1, text='按句子查询', command=bySentence, font=('Arial', 14))
+button4.pack(side=tk.LEFT)
+
+button5 = tk.Button(frame1, text='按字检索并放在excel中', command=byword, font=('Arial', 14))
+button5.pack(side=tk.LEFT)
+# 创建输出框
+frame2 = tk.Frame(window)
+frame2.pack()
+output = tk.Label(frame2, text='', font=('Arial', 14))
+output.pack()
+
+# 运行窗口
+window.mainloop()
