@@ -1,6 +1,10 @@
 import pandas as pd
 import tkinter as tk
 import openpyxl
+import matplotlib.pyplot as plt
+from wordcloud import WordCloud, STOPWORDS
+from PIL import ImageTk, Image
+import io
 
 # 读取excel文件
 df = pd.read_excel("python.xlsx")
@@ -134,9 +138,37 @@ def byword():
     # 保存Excel文件
     workbook.save("按字检索结果.xlsx")
     output.config(text=output_text)
+
+def generate_word_cloud():
+    # 读取 excel 文件
+    # 合并所有文本
+    text = ' '.join(df['诗词'].astype(str).tolist())
+    # 创建 WordCloud 对象
+    wc = WordCloud(font_path='SimHei.ttf',
+                   stopwords=STOPWORDS,
+                   background_color='white',
+                   width=800,
+                   height=800,
+                   max_words=200,
+                   max_font_size=100)
+    # 生成词云
+    wc.generate(text)
+    # 将 PIL 图像对象转换为 tkinter 图像对象
+    pil_image = wc.to_image()
+    img_bytes_arr = io.BytesIO()
+    pil_image.save(img_bytes_arr, format='PNG')
+    img_bytes_arr = img_bytes_arr.getvalue()
+    img = ImageTk.PhotoImage(Image.open(io.BytesIO(img_bytes_arr)))
+    # 显示词云图
+    canvas.create_image(400, 400, anchor='center', image=img)
+
+def clear_output():
+    output.config(text='')
+    canvas.delete("all")
+
 # 创建窗口
 window = tk.Tk()
-window.geometry('1000x500')
+window.geometry('1200x600')
 window.title('诗词检索系统')
 
 # 创建输入框和按钮
@@ -160,11 +192,22 @@ button4.pack(side=tk.LEFT)
 
 button5 = tk.Button(frame1, text='按字检索并放在excel中', command=byword, font=('Arial', 14))
 button5.pack(side=tk.LEFT)
+
+button5 = tk.Button(frame1, text='生成词云', command=generate_word_cloud, font=('Arial', 14))
+button5.pack(side=tk.LEFT)
+
+button6 = tk.Button(frame1, text='清空', command=clear_output, font=('Arial', 14))
+button6.pack(side=tk.LEFT)
+
 # 创建输出框
 frame2 = tk.Frame(window)
 frame2.pack()
 output = tk.Label(frame2, text='', font=('Arial', 14))
 output.pack()
+
+canvas = tk.Canvas(window, width=800, height=800)
+canvas.pack()
+
 
 # 运行窗口
 window.mainloop()
