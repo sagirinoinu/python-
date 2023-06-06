@@ -82,7 +82,7 @@ def bySentence():
     # 在excel文件中检索
     for index, row in df.iterrows():
         poetry = str(row[1])
-        j = 2
+        j = 0
         sentence = ""
         s = len(poetry)
         while j < s:
@@ -104,39 +104,8 @@ def bySentence():
     # 更新输出标签
     output['text'] = output_text
 
-    def feihualing():
-        # 飞花令，输出所有匹配的词
-        key = entry.get()
-        output_text = ""
-        # 新建Excel文件
-        workbook = openpyxl.Workbook()
-        sheet = workbook.active
-        sheet.title = "Search Results"
-        sheet.cell(row=1, column=1, value="诗词名")
-        sheet.cell(row=1, column=2, value="诗词")
-        sheet.cell(row=1, column=3, value="作者")
-        # 在excel文件中检索
-        row = 2
-        for index, row_data in df.iterrows():
-            poetry = str(row_data[1])
-            if poetry.find(key) != -1:
-                poetry += '\n'
-                name = str(row_data[0])
-                name += '\n'
-                author = str(row_data[2])
-                author += ' \n'
-                # 添加结果到列表中
-                output_text += name + author + poetry
-                sheet.cell(row=row, column=1, value=name)
-                sheet.cell(row=row, column=2, value=poetry)
-                sheet.cell(row=row, column=3, value=author)
-                row += 1
-        # 保存Excel文件
-        workbook.save("search_results.xlsx")
-        output.config(text=output_text)
-
 def byword():
-    # 飞花令，输出所有匹配的词
+    # 按字检索，输出并储存在excel中
     key = entry.get()
     output_text = ""
     # 新建Excel文件
