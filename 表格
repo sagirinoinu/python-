@@ -29,7 +29,7 @@
 		    </thead>
 		      <tr class="table-primary">
 		        <td>1</td>
-		        <td class="text-light"><a href="https://baike.baidu.com/link?url=Q29f7mD0v-PQyhN198A6t7IP4vLH88lEQqGf7XKoyGFV8cPJvlDKRAOUf_yNHxeaPWySkLHneo46w9vyamlzKlDNsbiFIXc8etMjYYUqP_b9BM4_9tDOxYssmHUXThvx-v24guxknyzsUhf1kXPMWa">和泉纱雾</a></td>
+		        <td class="text-light"><a href="https://baike.baidu.com/link?url=Q29f7mD0v-PQyhN198A6t7IP4vLH88lEQqGf7XKoyGFV8cPJvlDKRAOUf_yNHxeaPWySkLHneo46w9vyamlzKlDNsbiFIXc8etMjYYUqP_b9BM4_9tDOxYssmHUXThvx-v24guxknyzsUhf1kXPMWa" id = 'btn'>和泉纱雾</a></td>
 		        <td class="text-light">2101</td>
 				<td><img src="img/sagiri.webp" class="rounded-circle" style="height: 35px;width: 35px;"/></td>
 		      </tr>
@@ -70,6 +70,18 @@
 			    <td><img src="img/kulumi.webp" class="rounded-circle" style="height: 35px;width: 35px;"/></td>
 			  </tr>
 		</table>
+		<script>
+			$(function(){
+				$("#btn").click(function(){
+					var html='<a href="#" class="loading btn btn-primary" disabled><span class="spinner-border spinner-border-sm"></span>Loading..</a>'
+					$("#top").append(html);
+					setTimeout(function(){
+						alert("页面跳转了")
+						$("#top").empty();
+					},3000);
+				});
+			})
+		</script>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
 	</body>
