@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>测试网格</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<style>
+			.top .loading{
+				width: 200px;
+				height: 200px;
+				position: fixed;
+				top: 30%;
+				left: 45%;
+				z-index: 999;
+				border-radius: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<table class="table table-hover">
+		    <thead>
+		      <tr class="table table-dark">
+		        <th>序号</th>
+		        <th>姓名</th>
+		        <th>班级</th>
+				<th>照片</th>
+		      </tr>
+		    </thead>
+		      <tr class="table-primary">
+		        <td>1</td>
+		        <td class="text-light"><a href="https://baike.baidu.com/link?url=Q29f7mD0v-PQyhN198A6t7IP4vLH88lEQqGf7XKoyGFV8cPJvlDKRAOUf_yNHxeaPWySkLHneo46w9vyamlzKlDNsbiFIXc8etMjYYUqP_b9BM4_9tDOxYssmHUXThvx-v24guxknyzsUhf1kXPMWa">和泉纱雾</a></td>
+		        <td class="text-light">2101</td>
+				<td><img src="img/sagiri.webp" class="rounded-circle" style="height: 35px;width: 35px;"/></td>
+		      </tr>
+		      <tr class="table-success">
+		        <td>2</td>
+		        <td><a href="https://baike.baidu.com/item/%E4%BC%8A%E8%95%BE%E5%A8%9C/22505183?fr=aladdin">伊雷娜</a></td>
+		        <td>2101</td>
+		        <td><img src="img/ileina.webp" class="rounded-circle" style="height: 35px;width: 35px;"/></td>
+		      </tr>
+		      <tr class="table-danger">
+		        <td>3</td>
+		        <td><a href="https://baike.baidu.com/link?url=dEbI_wo5BLc0_zRwLpNwio2d4iGWH1UbTDWrXexsAHK7CmQ0c-z7sYJ0O-jkoySjI5cg8eCRyRju9-yXrhREC8rOuJB_Mr-t3Yq1urXqyuVzVTSVNOTJnawLemG_QMlWvDGCoYjP1fsGgS0uRaXneK">弥豆子</a></td>
+		        <td>2101</td>
+		        <td><img src="img/neziko.webp" class="rounded-circle" style="height: 35px;width: 35px;"/></td>
+		      </tr>
+			  <tr class="table-info">
+			    <td>4</td>
+			    <td><a href="https://baike.baidu.com/item/%E7%88%B1%E8%8E%89%E5%B8%8C%E9%9B%85/57959122?fr=aladdin">爱莉希雅</a></td>
+			    <td>2101</td>
+			    <td><img src="img/爱门.webp" class="rounded-circle" style="height: 35px;width: 35px;"/></td>
+			  </tr>
+			  <tr class="table-warning">
+			    <td>5</td>
+			    <td><a href="https://baike.baidu.com/link?url=2Gshy0BgMks2GGEpS0y3XCA2SopLbrkL1SXHT3KtDw3e2jjK678DqswLnQYZZQQqfo_Th9NfqiQS3Xuhc78ks4jvKQezw3kRPF0aQ0h12Ue">雷姆</a></td>
+			    <td>2101</td>
+			    <td><img src="img/lemu.webp" class="rounded-circle" style="height: 35px;width: 35px;"/></td>
+			  </tr>
+			  <tr class="table-active">
+			    <td>6</td>
+			    <td><a href="https://baike.baidu.com/item/%E7%94%98%E9%9C%B2%E5%AF%BA%E8%9C%9C%E7%92%83/22389950?fr=aladdin">蜜璃</a></td>
+			    <td>2101</td>
+			    <td><img src="img/micili.webp" class="rounded-circle" style="height: 35px;width: 35px;"/></td>
+			  </tr>
+			  <tr class="table-light">
+			    <td>7</td>
+			    <td><a href="https://baike.baidu.com/item/%E6%97%B6%E5%B4%8E%E7%8B%82%E4%B8%89/4073093?fr=aladdin">狂三</a></td>
+			    <td>2101</td>li
+			    <td><img src="img/kulumi.webp" class="rounded-circle" style="height: 35px;width: 35px;"/></td>
+			  </tr>
+		</table>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
