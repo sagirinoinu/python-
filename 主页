@@ -14,6 +14,10 @@
 			.carousel-item img {
 				width: 100%;
 			}
+			.btn{
+				width: 100px;
+				background-color: aqua;
+			}
 		</style>
 	</head>
 	<body>
@@ -90,20 +94,23 @@
 									<label for="pwd">确认新密码:</label>
 									<div class="invalid-feedback">请确认新密码</div>
 								</div>
-							<button type="submit" class="btn btn-primary">确认更改</button>
+								<div class="row">
+									<button type="button" class="btn" style="margin-left: 42%;" onclick="yanzheng()">确认</button>
+								</div>
 						</form>
 					</div>
 				</div>
 			</div>
 		</div>
 		<script>
-			function booll(){
-				var mm1 = document.getElementById("email").value;
-				var mm2 = document.getElementById("pwd").value;
-				if (mm1 == mm2) {
-					window.location.href = "登录页.html";
-				} else{
-					alert("两次输入的密码不相同");
+			function yanzheng() {
+				var na = document.getElementById("email").value; // 获取输入框中的值
+				// 使用比较操作符 === 来比较值
+				var mm = document.getElementById("pwd").value; // 获取输入框中的值
+				if (mm === na) { // 使用比较操作符 === 来比较值
+					window.location.href = "登录页.html"; // 重定向到指定页面
+				} else {
+					alert("两次输入的密码不一致，请重新输入!");
 				}
 			}
 		</script>
