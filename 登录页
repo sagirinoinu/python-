@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>登录页</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<style>
+			{padding: 0;margin: 0;}
+			 body {
+			        background-image: url(img/sagiri2.jpg);
+			        background-size: cover;
+			        background-repeat: no-repeat;
+			        background-position: center center;
+			        min-height: 100vh; /* 设置最小高度为可视窗口高度 */
+			    }
+			.main {
+			    width: 30%;
+			    margin-left: 34%;
+			    background-color: rgba(255, 255, 0, 0.4);
+			    border-radius: 5%;
+			    margin-top: 15%;
+			    background-image: url(img/sagiri1.webp);
+			    background-size: cover; /* 调整背景图尺寸以填充容器 */
+			    background-position: center center; /* 居中显示背景图 */
+			}
+			.btn{
+				width: 100px;
+				background-color: aqua;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div class="container mybox">
+				<div class="row">
+					<div class="col-md-12">
+						<h3 class="text-danger ma-lg-g" style="margin-left: 37%;">欢迎登陆</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-floating mb-3 mt-3 was-validated">
+						<input type="text" class="form-control" id="email" placeholder="请输入账号" name="email" required>
+						<label for="email">账号:</label>
+						<div class="valid-feedback"></div>
+						<div class="invalid-feedback">请输入账号</div>
+					</div>
+					<div class="form-floating mt-3 mb-3 was-validated">
+						<input type="text" class="form-control" id="pwd" placeholder="请输入密码" name="pswd" required>
+						<label for="pwd">密码:</label>
+						<div class="invalid-feedback">请输入密码</div>
+					</div>
+					<div class="row">
+						<button type="button" class="btn" style="margin-left: 42%;" onclick="yanzheng()">确认</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			function yanzheng() {
+				var na = document.getElementById("email").value; // 获取输入框中的值
+				if (na === "admin") { // 使用比较操作符 === 来比较值
+					var mm = document.getElementById("pwd").value; // 获取输入框中的值
+					if (mm === "123456") { // 使用比较操作符 === 来比较值
+						window.location.href = "主页.html"; // 重定向到指定页面
+					} else {
+						alert("密码错误");
+					}
+				} else {
+					console.log(typeof na);
+					alert("账号错误");
+				}
+			}
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
