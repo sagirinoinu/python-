@@ -18,6 +18,9 @@
 				width: 100px;
 				background-color: aqua;
 			}
+			body{
+				background: -webkit-linear-gradient(45deg,#03e9f4, #eb00ff, #20c997);
+			}
 		</style>
 	</head>
 	<body>
@@ -80,7 +83,7 @@
 						<h5 class="modal-title" id="changePasswordLabel">更改密码</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
-					<div class="modal-body">
+					<div class="modal-body ">
 						<form>
 							<div class="row">
 								<div class="form-floating mb-3 mt-3 was-validated">
@@ -97,6 +100,7 @@
 								<div class="row">
 									<button type="button" class="btn" style="margin-left: 42%;" onclick="yanzheng()">确认</button>
 								</div>
+							</div>
 						</form>
 					</div>
 				</div>
@@ -105,9 +109,10 @@
 		<script>
 			function yanzheng() {
 				var na = document.getElementById("email").value; // 获取输入框中的值
-				// 使用比较操作符 === 来比较值
 				var mm = document.getElementById("pwd").value; // 获取输入框中的值
-				if (mm === na) { // 使用比较操作符 === 来比较值
+				if (mm == "" || na == "") { // 修改此处，使用相等操作符 == 来比较值
+					alert("输入框不能为空");
+				} else if (mm === na) { // 修改此处，使用相等操作符 == 来比较值，添加 else if 语句
 					window.location.href = "登录页.html"; // 重定向到指定页面
 				} else {
 					alert("两次输入的密码不一致，请重新输入!");
