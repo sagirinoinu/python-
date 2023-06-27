@@ -2,124 +2,653 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>主页</title>
+		<title></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="js/jquery-3.7.0.min.js"></script>
+		<script src="js/bootstrap.bundle.js"></script>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<style>
+			/* 头像的大小 */
 			.s1 {
 				width: 40px;
 				height: 40px;
 				border-radius: 50%;
 			}
-			.carousel-item img {
+			/* 背景图片 */
+			body {
+			    background-image: url(https://patchwiki.biligame.com/images/apex/3/30/7acgccggj741nvofkczdmpewsduds0m.jpg);
+			    background-attachment: fixed;
+			}
+			/* 拟态框和侧边栏的颜色 */
+			.s2 {
+				background: red;
+				opacity: 0.8;
+			}
+			/* 将定位栏的字体水平和垂直居中 */
+			.s3 {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			/* 鼠标悬停时缩放和置于最上层 */
+			.image-container img {
 				width: 100%;
+				height: auto;
+				transition: all 0.3s ease-out;
+				position: relative;
+				display: block;
+				z-index: 1;
+				border-radius: 50%;
 			}
-			.btn{
-				width: 100px;
-				background-color: aqua;
+			.image-container img:hover {
+				transform: scale(1.5) ;
+				z-index: 10;
 			}
-			body{
-				background: -webkit-linear-gradient(45deg,#03e9f4, #eb00ff, #20c997);
+			
+			.bg-red {
+			  background-color: red;
 			}
 		</style>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-			<ul class="navbar-nav">
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown">
-						<img src="img/爱门.webp" class="s1" />
-					</a>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#changePasswordModal">更改密码</a>
-						<a class="dropdown-item" href="#">更改头像</a>
-					</div>
+		<!-- 导航栏 -->
+		<div class=" mt-3">
+			<ul class="nav nav-tabs" role="tablist" style="background-color: red;">
+				<li class="nav-item">
+					<a class="nav-link active" data-bs-toggle="tab" href="#menu">主页</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Link 1</a>
+					<a class="nav-link" data-bs-toggle="tab" href="#home">孔德礼的页面</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Link 2</a>
+					<a class="nav-link" data-bs-toggle="tab" href="#menu1">赵晨云的页面</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Link 3</a>
+					<a class="nav-link" data-bs-toggle="tab" href="#menu2">鲍俊辰的页面</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-bs-toggle="tab" href="#menu3">陈奕钧的页面</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-bs-toggle="tab" href="#menu4">周亚军的页面</a>
 				</li>
 			</ul>
-		</nav>
-		<div class="container-fluid">
-			<div class="d-flex justify-content-center">
-				<div id="demo" class="carousel slide" data-bs-ride="carousel">
-					<div class="carousel-indicators">
-						<button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-						<button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-						<button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-					</div>
-					<div class="carousel-inner">
-						<div class="carousel-item active">
-							<img src="img/sagiri2.jpg" class="d-block">
+			<!-- 在左边显示头像 -->
+			<div class="col-md-1" style="margin-top: -48px; margin-left: 90%;">
+				<ul class="navbar-nav">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown">
+							<img src="img/apex.png" class="rounded-circle border border-2 dorder-danger" height="40px" width="40px" alt="" />
+						</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#changePasswordModal">更改密码</a>
+							<a class="dropdown-item" data-bs-toggle="offcanvas" href="#offcanvasExample">个人信息</a>
+							<a class="dropdown-item" href="#" data-bs-toggle="modal" onclick="logout()">退出登录</a>
 						</div>
-						<div class="carousel-item">
-							<img src="img/sagiri.webp" class="d-block">
-						</div>
-						<div class="carousel-item">
-							<img src="img/sagiri1.webp" class="d-block">
-						</div>
-					</div>
-					<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-						<span class="carousel-control-prev-icon"></span>
-					</button>
-					<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-						<span class="carousel-control-next-icon"></span>
-					</button>
-				</div>
+					</li>
+				</ul>
 			</div>
-		</div>
+			<!-- 孔德礼的页面 -->
+			<div class="tab-content " style="width: 80%; margin-left: 10%; background-color: white;">
+				<div id="home" class="container-fluid tab-pane active"><br>
+					<div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-		<!-- 更改密码模态框 -->
-		<div class="modal fade" id="changePasswordModal" tabindex="-1" aria-labelledby="changePasswordLabel" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="changePasswordLabel">更改密码</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<!-- 指示符 -->
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+							<button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+							<button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+						</div>
+
+						<!-- 轮播图片 -->
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img decoding="async" src="img/地平线1.jpg" class="d-block" style="width:100%">
+							</div>
+							<div class="carousel-item">
+								<img decoding="async" src="img/地平线2.jpg" class="d-block" style="width:100%">
+							</div>
+							<div class="carousel-item">
+								<img decoding="async" src="img/地平线3.png" class="d-block" style="width:100%">
+							</div>
+						</div>
+
+						<!-- 左右切换按钮 -->
+						<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</button>
 					</div>
-					<div class="modal-body ">
-						<form>
-							<div class="row">
-								<div class="form-floating mb-3 mt-3 was-validated">
-									<input type="text" class="form-control" id="email" placeholder="请输入新密码" name="email" required>
-									<label for="email">新密码:</label>
-									<div class="valid-feedback"></div>
-									<div class="invalid-feedback">请输入新密码</div>
-								</div>
-								<div class="form-floating mt-3 mb-3 was-validated">
-									<input type="text" class="form-control" id="pwd" placeholder="请确认新密码" name="pswd" required>
-									<label for="pwd">确认新密码:</label>
-									<div class="invalid-feedback">请确认新密码</div>
-								</div>
-								<div class="row">
-									<button type="button" class="btn" style="margin-left: 42%;" onclick="yanzheng()">确认</button>
+					<!-- 卡片和图片展示 -->
+					<div class="container-fluid myfox" id="imc">
+						<div class="row">
+							<div class="col">
+								<div class="row mt-3 ms-12">
+									<div class="col-4">
+										<div class="row mt-3">
+											<h2 class="text-center text-light bg-red">地平线</h2>
+										</div>
+										<div class="container mt-3 text-center">
+											<img src="img/地平线.png" />
+										</div>
+									</div>
+									<div class="col-8">
+										<div class="row mt-3">
+											<h2 class="text-center text-light bg-red">地平线可公开档案</h2>
+										</div>
+										<div style="line-height:27px">
+											<h2><span></span><span class="mw-headline">引力操控者</span></h2>
+											<p>将近一个世纪之前，外域碰上了一场灾难性的能量危机。玛丽·萨摩斯博士是一名有魅力但有些古怪的天体物理学家，她被雇佣来寻找解决方案。玛丽将全家都搬到了奥林匹斯上的科学研究站并开始工作。
+											</p>
+											<p>在她的学生，里德博士的协助下，玛丽发现了布拉提恩——她认为这是一种能够提供无限能量的元素。但布拉提恩只会出现在黑洞的吸积盘上，所以玛丽博士和里德博士踏上了这个危险的任务来证明她的理论。
+											</p>
+											<p>玛丽向自己的儿子纽特承诺自己会安全回家，但里德博士却背叛了她，她不但偷走了布拉提恩，还将她的太空舱送回黑洞的轨道。玛丽通过自己的机智改装了她的机器人同伴纽特来逃脱。不过黑洞内外的时间推移速度并不一样，而她晚了87年。
+											</p>
+											<p>现在，玛丽一心想要取得研究资金来寻找回到过去，与儿子团聚的方法。她以引力大师地平线的名号加入了Apex竞赛，正好赶上了在这个赛季中推出的的奥林匹斯——她曾经的家，也是她承诺他要回来的地方。<br>
+												<b>真名：</b>玛丽·萨默斯博士<br>
+												<b>性别：</b>女性<br>
+												<b>年龄：</b>126<br>
+												<b>身高：</b>未知<br>
+												<b>体重：</b>未知<br>
+												<b>家园：</b>普萨玛忒<br>
+												<b>类型：</b>游击型<br>
+												<b>配音：</b>卢晓彤/Elle Newlands<br>
+											</p>
+										</div>
+									</div>
 								</div>
 							</div>
-						</form>
+						</div>
+					</div>
+					<!-- 技能 -->
+					<div class="container-fluid myfox" id="bwl">
+						<div>
+							<div class="row mt-3">
+								<h2 class="text-center text-light bg-red">地平线技能介绍</h2>
+							</div>
+							<div class="row">
+								<div class="container mt-3">
+									<!-- 表格 -->
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th colspan="3" class="text-center">重力电梯</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td rowspan="3" class="ms-1" style="width: 100px;"><img src="img/重力电梯.png" /></td>
+												<td class="ms-1 text-center" style="width: 100px;">技能类型</td>
+												<td class="ms-10">战术技能</td>
+											</tr>
+											<tr>
+												<td class="text-center">冷却时间</td>
+												<td>20秒</td>
+											</tr>
+											<tr>
+												<td class="text-center">技能简介</td>
+												<td>逆转重力流，带动玩家上升，在他们离开时，将其加速推向外侧。</td>
+											</tr>
+											<!-- 设置按钮并点击按钮显示影藏的盒子 -->
+											<tr>
+												<th colspan="3">
+													<ul class="list-group list-group-horizontal">
+														<li class="list-group-item" style="width: 100%;">
+															<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCard1"
+															 aria-expanded="false" aria-controls="collapseCard">信息</button>
+															<div class="collapse" id="collapseCard1">
+																<div class="card card-body">
+																	<ul>
+																		<li>当地平线使用重力电梯，它具有以下特性
+																			<ul>
+																				<li>在地上持续存在10秒。</li>
+																				<li>可以将玩家往上推升30米。</li>
+																				<li>升到顶端后只能悬浮2秒，2秒后会强制推向外侧。<br></li>
+																				<li>如果在持续时间快要结束时有玩家在重力天梯内，则重力天梯会将玩家推送至最顶端后才会消失。</li>
+																			</ul>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+															<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCard2"
+															 aria-expanded="false" aria-controls="collapseCard">提示</button>
+															<div class="collapse" id="collapseCard2">
+																<div class="card card-body">
+																	<ul>
+																		<li>除了帮助您的小队到达高地之外，您还可以使用它通过将其扔到脚下来迷惑敌人。</li>
+																		<li>会被沃特森的拦截者塔击毁。</li>
+																	</ul>
+																</div>
+															</div>
+															<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCard3"
+															 aria-expanded="false" aria-controls="collapseCard">建议</button>
+															<div class="collapse" id="collapseCard3">
+																<div class="card card-body">
+																	<ul>
+																		<li>重力电梯还可以升起三叉戟、手雷以及死亡之箱这些实体。</li>
+																		<li>重力电梯可以挡住门口和走廊。确保不要阻挡自己或您的队友。</li>
+																		<li>您可以使用重力天梯将被击倒的队友推升到更安全的位置。</li>
+																		<ul>
+																			<li>确保将您的重力天梯扔到击倒的队友的旁边，以免他们朝着意外的方向前进。</li>
+																		</ul>
+																	</ul>
+																</div>
+															</div>
+														</li>
+													</ul>
+												</th>
+											</tr>
+										</tbody>
+									</table>
+									<!-- 表格 -->
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th colspan="3" class="text-center">太空漫步</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td rowspan="3" class="ms-1" style="width: 100px;"><img src="img/太空漫步.png" /></td>
+												<td class="ms-1 text-center" style="width: 100px;">技能类型</td>
+												<td class="ms-10">被动技能</td>
+											</tr>
+											<tr>
+												<td class="text-center">冷却时间</td>
+												<td>无</td>
+											</tr>
+											<tr>
+												<td class="text-center">技能简介</td>
+												<td>使用地平线的定制宇航服，增强气动控制，并减少落地冲击。</td>
+											</tr>
+											<!-- 设置按钮并点击按钮显示影藏的盒子 -->
+											<tr>
+												<th colspan="3">
+													<ul class="list-group list-group-horizontal">
+														<li class="list-group-item" style="width: 100%;">
+															<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCard4"
+															 aria-expanded="false" aria-controls="collapseCard">信息</button>
+															<div class="collapse" id="collapseCard4">
+																<div class="card card-body">
+																	<ul>
+																		<li>相较于其他传奇，地平线在空中可以移动的范围更大，并且落地之后没有硬直。</li>
+																	</ul>
+																</div>
+															</div>
+															<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCard5"
+															 aria-expanded="false" aria-controls="collapseCard">提示</button>
+															<div class="collapse" id="collapseCard5">
+																<div class="card card-body">
+																	<ul>
+																		<li>可以利用该被动在高空中跌落利用被动避免硬直。</li>
+																		<ul>
+																			<li>可以用此技巧领先敌人几秒逃跑。</li>
+																		</ul>
+																	</ul>
+																</div>
+															</div>
+														</li>
+													</ul>
+												</th>
+											</tr>
+										</tbody>
+									</table>
+									<!-- 表格 -->
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th colspan="3" class="text-center">黑洞</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td rowspan="3" class="ms-1" style="width: 100px;"><img src="img/黑洞.png" /></td>
+												<td class="ms-1 text-center" style="width: 100px;">技能类型</td>
+												<td class="ms-10">终极技能</td>
+											</tr>
+											<tr>
+												<td class="text-center">冷却时间</td>
+												<td>180秒</td>
+											</tr>
+											<tr>
+												<td class="text-center">技能简介</td>
+												<td>部署纽特以创造一个微型黑洞，并将玩家拉过去。</td>
+											</tr>
+											<!-- 设置按钮并点击按钮显示影藏的盒子 -->
+											<tr>
+												<th colspan="3">
+													<ul class="list-group list-group-horizontal">
+														<li class="list-group-item" style="width: 100%;">
+															<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCard6"
+															 aria-expanded="false" aria-controls="collapseCard">信息</button>
+															<div class="collapse" id="collapseCard6">
+																<div class="card card-body">
+																	<ul>
+																		<li>当地平线投出纽特并落地时，它具有以下特性：
+																			<ul>
+																				<li>落地后拥有2秒的启动时间。</li>
+																				<li>启动后持续存在12秒。</li>
+																				<li>拥有175点生命值，可以被摧毁。<br></li>
+																				<li>吸力会摧毁范围内的门。</li>
+																				<li>吸引效果可以穿过掩体。</li>
+																				<li>当敌人在纽特的吸力范围内时会被标注出来。</li>
+																			</ul>
+																		</li>
+																		<li>可以对 友方/投掷物 产生影响，但是影响较小。</li>
+																	</ul>
+																</div>
+															</div>
+															<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCard7"
+															 aria-expanded="false" aria-controls="collapseCard">提示</button>
+															<div class="collapse" id="collapseCard7">
+																<div class="card card-body">
+																	<ul>
+																		<li>纽特会被以下传奇技能摧毁：
+																			<ul>
+																				<li>沃特森的拦截者塔。</li>
+																				<li>密客无人机的EMP。</li>
+																			</ul>
+																		</li>
+																		<li>可以改变侵蚀的毒气罐、Nox手雷的投掷弹道以及飞行速度。</li>
+																	</ul>
+																</div>
+															</div>
+														</li>
+													</ul>
+												</th>
+											</tr>
+										</tbody>
+									</table>
+									<!-- 表格 -->
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th colspan="3" class="text-center">游击</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td rowspan="3" class="ms-1" style="width: 100px;"><img src="img/游击.png" /></td>
+												<td class="ms-1 text-center" style="width: 100px;">技能类型</td>
+												<td class="ms-10">定位</td>
+											</tr>
+											<tr>
+												<td class="text-center">冷却时间</td>
+												<td>无</td>
+											</tr>
+											<tr>
+												<td class="text-center">技能简介</td>
+												<td>战斗机动与逃脱。</td>
+											</tr>
+											<!-- 设置按钮并点击按钮显示影藏的盒子 -->
+											<tr>
+												<th colspan="3">
+													<ul class="list-group list-group-horizontal">
+														<li class="list-group-item" style="width: 100%;">
+															<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCard8"
+															 aria-expanded="false" aria-controls="collapseCard">信息</button>
+															<div class="collapse" id="collapseCard8">
+																<div class="card card-body">
+																	<ul>
+																		<li>揭开补给仓以查看其中的高价值物品。</li>
+																	</ul>
+																</div>
+															</div>
+															<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCard9"
+															 aria-expanded="false" aria-controls="collapseCard">提示</button>
+															<div class="collapse" id="collapseCard9">
+																<div class="card card-body">
+																	<ul>
+																		<li>当下一轮补给仓开始投放时，可以再次使用。</li>
+																	</ul>
+																</div>
+															</div>
+														</li>
+													</ul>
+												</th>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 故事 -->
+					<div class="container-fluid myfox" id="故事">
+						<div class="row">
+							<div class="col">
+								<div class="col-12">
+									<div class="row mt-3">
+										<h2 class="text-center text-light bg-red">地平线的故事</h2>
+									</div>
+									<div style="line-height:27px">
+										<h2><span></span><span class="mw-headline">注：萨默斯为地平线</span></h2>
+										<p>在普萨玛忒（外域大都市行星）的奥林匹斯 ，天体物理学家玛丽·萨默斯博士受雇寻找解决方案，以防止外域的能源危机。她和她的助手艾什莉·里德博士发现了一种超大质量元素的潜力，他们称之为锫——原子序数为 150
+											的元素只能在黑洞的吸积盘中找到。对她年幼的孩子纽特·萨默斯来说，她将即将到来的任务描述为一个童话故事，她自己是一个英雄，前往遥远的土地寻找水晶来拯救王国。纽特担心她的安全，担心离开母亲这么久，所以萨默斯博士承诺很快就会回来。</p>
+										<p>当他们到达黑洞2427-SR时里德博士留在飞船里，而萨默斯博士的航天飞机系在靠近吸积盘的地方收集样本。她成功地生成了一个样本并将其送回主船，但显然与另一方合作的里德博士背叛了萨默斯博士并断开了系绳。朝着事件视界漂移，对于
+											萨默斯 博士来说已经过去了246天，但对于世界其他地方来说，已经过去了87年。最终，萨默斯博士设法生成了另一个溴样品，并用它把自己从黑洞的引力中弹射出来。</p>
+										<p>回到奥林匹斯后，萨默斯博士发现这座城市已被遗弃，她家中没有任何证据表明纽特发生了什么事。尽管心灰意冷，但她仍然决心找到一种方法来兑现她的诺言。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 图片列表 -->
+					<div class="container-fluid myfox" id="sagiri">
+						<div>
+							<div class="row mt-3">
+								<h2 class="text-center text-light bg-red">地平线皮肤展示</h2>
+							</div>
+							<div class="row">
+								<div class="col">
+									<div class="image-container">
+										<ul class="list-group list-group-horizontal">
+											<li class="list-group-item square col-2"><img src="img/solaris.png"></li>
+											<li class="list-group-item square col-2"><img src="img/Terra%20nova.png"></li>
+											<li class="list-group-item square col-2"><img src="img/dark.png"></li>
+											<li class="list-group-item square col-2"><img src="img/golden.png"></li>
+											<li class="list-group-item square col-2"><img src="img/neon.png"></li>
+											<li class="list-group-item square col-2"><img src="img/galactic.png"></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<div class="image-container">
+										<ul class="list-group list-group-horizontal">
+											<li class="list-group-item square col-2"><img src="img/supermassive.png"></li>
+											<li class="list-group-item square col-2"><img src="img/biotic.png"></li>
+											<li class="list-group-item square col-2"><img src="img/brave.png"></li>
+											<li class="list-group-item square col-2"><img src="img/overfloater.png"></li>
+											<li class="list-group-item square col-2"><img src="img/jewel.png"></li>
+											<li class="list-group-item square col-2"><img src="img/atom.png"></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<div class="image-container">
+										<ul class="list-group list-group-horizontal">
+											<li class="list-group-item square col-2"><img src="img/生态物理学.png"></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 卡片 -->
+					<div class="container-fluid myfox">
+						<div class="row">
+							<div class="col-5" id="kap">
+								<div class="row mt-3">
+									<h2 class="text-center text-light bg-red">地平线经典台词</h2>
+								</div>
+								<div class="container">
+									<div class="card bg-primary text-white">
+										<div class="card-body">别担心因为我是最棒的。</div>
+									</div>
+									<br>
+									<div class="card bg-success text-white">
+										<div class="card-body">你的努力不算无用功。</div>
+									</div>
+									<br>
+									<div class="card bg-info text-white">
+										<div class="card-body">暴力推动科学。</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-7" id="评价">
+								<div class="row mt-3">
+									<h2 class="text-center text-light bg-red">对地平线的评价</h2>
+								</div>
+								<div class="col-12">
+									<div style="line-height:27px">
+										<p>地平线是APEX英雄中的一名非常特别的角色，她的设计和玩法都非常独特。</p>
+										<p>首先，地平线的技能绝对是游戏中最具有创新性和实用性的，她的排斥力场具有墙壁的特点，可以挡住子弹和敌人的攻击，为队友提供掩护和保护，简直是团队作战中的神器。其次，地平线的移动能力非常出色，悬浮装置和紧急闪烁让她非常难以被攻击到，极大提高了她的生存能力。最后，地平线的天赋非常适合少数玩家擅长的快攻战术，让她成为一个非常危险的对手。</p>
+										<p>总的来说，地平线是一名非常强大的角色，其独特的技能和功能，以及其出色的适应能力，让她成为很多玩家心目中的最爱之一。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 定位 -->
+					<div class="row" style="position: fixed; top: 50%; left: 0; transform: translateY(-50%);">
+						<div class="col-4">
+							<div id="list-example" class="list-group" style="font-size: 12px;">
+								<a class="list-group-item list-group-item-action text-center s3" style="height: 70px;" href="#demo">顶部</a>
+								<a class="list-group-item list-group-item-action text-center s3" style="height: 70px;" href="#imc">介绍</a>
+								<a class="list-group-item list-group-item-action text-center s3" style="height: 70px;" href="#bwl">技能</a>
+								<a class="list-group-item list-group-item-action text-center s3" style="height: 70px;" href="#故事">故事</a>
+								<a class="list-group-item list-group-item-action text-center s3" style="height: 70px;" href="#sagiri">皮肤</a>
+								<a class="list-group-item list-group-item-action text-center s3" style="height: 70px;" href="#kap">台词</a>
+								<a class="list-group-item list-group-item-action text-center s3" style="height: 70px;" href="#评价">评价</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 赵晨云的页面 -->
+				<div id="menu1" class="container-fluid tab-pane fade"><br>
+
+				</div>
+				<!-- 鲍俊辰的页面 -->
+				<div id="menu2" class="container-fluid tab-pane fade"><br>
+
+
+				</div>
+				<!-- 陈奕钧的页面 -->
+				<div id="menu3" class="container-fluid tab-pane fade"><br>
+
+
+				</div>
+				<!-- 周亚军的页面 -->
+				<div id="menu4" class="container-fluid tab-pane fade"><br>
+
+
+				</div>
+				<!-- 主页 -->
+				<div id="menu" class="container-fluid tab-pane fade"><br>
+					<div id="demo" class="carousel slide" data-bs-ride="carousel">
+					 
+					   <!-- 指示符 -->
+					  <div class="carousel-indicators">
+					    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+					    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+					    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+					  </div>
+					  
+					  <!-- 轮播图片 -->
+					  <div class="carousel-inner">
+					    <div class="carousel-item active">
+					      <img decoding="async" src="https://static.runoob.com/images/mix/img_fjords_wide.jpg" class="d-block" style="width:100%">
+					    </div>
+					    <div class="carousel-item">
+					      <img decoding="async" src="https://static.runoob.com/images/mix/img_nature_wide.jpg" class="d-block" style="width:100%">
+					    </div>
+					    <div class="carousel-item">
+					      <img decoding="async" src="https://static.runoob.com/images/mix/img_mountains_wide.jpg" class="d-block" style="width:100%">
+					    </div>
+					  </div>
+					  
+					  <!-- 左右切换按钮 -->
+					  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+					    <span class="carousel-control-prev-icon"></span>
+					  </button>
+					  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+					    <span class="carousel-control-next-icon"></span>
+					  </button>
+					</div>
+				</div>
+
+			<!-- 更改密码模态框 -->
+			<div class="modal fade" id="changePasswordModal" tabindex="-1" aria-labelledby="changePasswordLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content s2">
+						<div class="modal-header">
+							<h5 class="modal-title" id="changePasswordLabel">更改密码</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body ">
+							<form>
+								<div class="row">
+									<div class="form-floating mb-3 mt-3 was-validated">
+										<input type="text" class="form-control" id="email" placeholder="请输入新密码" name="email" required>
+										<label for="email">新密码:</label>
+										<div class="valid-feedback"></div>
+										<div class="invalid-feedback">请输入新密码</div>
+									</div>
+									<div class="form-floating mt-3 mb-3 was-validated">
+										<input type="text" class="form-control" id="pwd" placeholder="请确认新密码" name="pswd" required>
+										<label for="pwd">确认新密码:</label>
+										<div class="invalid-feedback">请确认新密码</div>
+									</div>
+									<div class="row">
+										<button type="button" class="btn" style="margin-left: 47%; width: 60px;" onclick="yanzheng()">确认</button>
+									</div>
+								</div>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<script>
-			function yanzheng() {
-				var na = document.getElementById("email").value; // 获取输入框中的值
-				var mm = document.getElementById("pwd").value; // 获取输入框中的值
-				if (mm == "" || na == "") { // 修改此处，使用相等操作符 == 来比较值
-					alert("输入框不能为空");
-				} else if (mm === na) { // 修改此处，使用相等操作符 == 来比较值，添加 else if 语句
-					window.location.href = "登录页.html"; // 重定向到指定页面
-				} else {
-					alert("两次输入的密码不一致，请重新输入!");
+			<!-- 侧边栏 -->
+			<div class="offcanvas offcanvas-start s2" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+				<div class="offcanvas-header d-flex justify-content-center">
+					<h5 class="offcanvas-title text-center" id="offcanvasExampleLabel">个人信息</h5>
+				</div>
+				<div class="offcanvas-header d-flex justify-content-center">
+					<p><img src="img/apex.png" / width="60px" height="60px" style="border-radius: 50%;"></p>
+				</div>
+				<div class="offcanvas-header d-flex justify-content-center" style="height: 20px;">
+					<p>昵称：Sagiri</p>
+				</div>
+				<div class="offcanvas-header d-flex justify-content-center" style="height: 20px;">
+					<p>生日：12/16</p>
+				</div>
+				<div class="offcanvas-header d-flex justify-content-center" style="height: 20px;">
+					<p>爱好：懒得写</p>
+				</div>
+			</div>
+			<script>
+				function logout() {
+					window.location.href = "登录页.html";
 				}
-			}
-		</script>
-		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+
+				function yanzheng() {
+					var na = document.getElementById("email").value; // 获取输入框中的值
+					var mm = document.getElementById("pwd").value; // 获取输入框中的值
+					if (mm == "" || na == "") { // 修改此处，使用相等操作符 == 来比较值
+						alert("输入框不能为空");
+					} else if (mm === na) { // 修改此处，使用相等操作符 == 来比较值，添加 else if 语句
+						window.location.href = "登录页.html"; // 重定向到指定页面
+					} else {
+						alert("两次输入的密码不一致，请重新输入!");
+					}
+				}
+			</script>
 	</body>
 </html>
