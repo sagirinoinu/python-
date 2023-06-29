@@ -53,6 +53,47 @@
 			.d1{
 				background-color: white;
 			}
+			.jiqiimg:hover {
+				padding: 0;
+				cursor: pointer;
+				border: 1px solid pink;
+				box-shadow: 0 0 5px 0 pink,
+					0 0 10px 0 pink,
+					0 0 15px 0 pink;
+				animation: jiqisuofang 1s linear infinite;
+			}
+			.jiqiimg1:hover {
+				padding: 0;
+				cursor: pointer;
+				border: 1px solid deepskyblue;
+				box-shadow: 0 0 5px 0 deepskyblue,
+					0 0 10px 0 deepskyblue,
+					0 0 15px 0 deepskyblue;
+				animation: jiqispin 1.5s linear infinite;
+			}
+			@keyframes jiqispin {
+				0% {
+					transform: rotate(0);
+				}
+			
+				100% {
+					transform: rotate(360deg);
+				}
+			}
+			
+			@keyframes jiqisuofang {
+				0% {
+					transform: scale(1, 1);
+				}
+			
+				50% {
+					transform: scale(0.6, 0.6);
+				}
+			
+				100% {
+					transform: scale(1, 1);
+				}
+			}
 		</style>
 	</head>
 	<body>
@@ -421,12 +462,12 @@
 						</div>
 					</div>
 					<!-- 故事 -->
-					<div class="container-fluid myfox" id="故事">
+					<div class="container-fluid myfox rounded-5" id="故事">
 						<div class="row">
 							<div class="col">
 								<div class="col-12">
 									<div class="row mt-3">
-										<h2 class="text-center text-light bg-red rounded-5">地平线的故事</h2>
+										<h2 class="text-center text-light bg-red">地平线的故事</h2>
 									</div>
 									<div style="line-height:27px">
 										<h2><span></span><span class="mw-headline">注：萨默斯为地平线</span></h2>
@@ -540,6 +581,1633 @@
 					<br />
 					<br />
 				</div>
+				<!-- 赵晨云的页面 -->
+				<div id="menu1" class="container-fluid tab-pane fade"><br>
+					<div class="container-fluid">
+						<div class="container tab-pane active">
+							<div class="row">
+								<div class="col-md-12" style="height: 4400px;">
+									<!-- 轮播 -->
+									<div class="row">
+										<div class="col-md-12">
+											<div id="jiqidemo" class="carousel slide" data-bs-ride="carousel">
+												<div class="carousel-indicators">
+													<button type="button" data-bs-target="#jiqidemo" data-bs-slide-to="0" class="active"></button>
+													<button type="button" data-bs-target="#jiqidemo" data-bs-slide-to="1"></button>
+													<button type="button" data-bs-target="#jiqidemo" data-bs-slide-to="2"></button>
+												</div>
+												<div class="carousel-inner">
+													<div class="carousel-item active" data-bs-interval="2000">
+														<img decoding="async" src="img/机器人.jpg" class="d-block" style="width: 100%;" height="600px">
+													</div>
+													<div class="carousel-item" data-bs-interval="2000">
+														<img decoding="async" src="img/机器人1.jpg" class="d-block" style="width: 100%;" height="600px">
+													</div>
+													<div class="carousel-item" data-bs-interval="2000">
+														<img decoding="async" src="img/机器人2.jpg" class="d-block" style="width: 100%;" height="600px">
+													</div>
+												</div>
+												<button class="carousel-control-prev" type="button" data-bs-target="#jiqidemo" data-bs-slide="prev">
+													<span class="carousel-control-prev-icon"></span>
+												</button>
+												<button class="carousel-control-next" type="button" data-bs-target="#jiqidemo" data-bs-slide="next">
+													<span class="carousel-control-next-icon"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+									<!-- 人物介绍 -->
+									<div class="row" id="jiqirenwu">
+										<div class="col-4">
+											<div class="col-md-10 bg-light bg-opacity-75">
+												<h1 class="bg-secondary text-center" style="border-radius: 20px">探路者</h1>
+												<div class="list-group   justify-content-center">
+													<img src="img/机器人3.png" style="width: 200px; height: 420px;margin-left: 20%;">
+												</div>
+											</div>
+										</div>
+										<div class="col-8 bg-light bg-opacity-75">
+											<h1 class="bg-secondary text-center text-light" style="border-radius: 20px">探路者可公开档案</h1>
+											<div class="justify-content-center" style="height: 400px;">
+												<h2>先锋斥侯</span></h2>
+												<hr>
+												<p>即便深处困境，探路者却总是非常乐观。一架经过改造的马文机器人（又称机动机械多功能实体），擅长侦察、扫描区域。数十年前，他在一座遗弃的实验室中突然启动，他并不了解自己是谁创造的或是自己的目的为何。他对自己身份的唯一的线索是他的马文指示，探路者因此踏上一段旅程来寻找自己的创造者。
+												</p>
+												<p>探路者在他的旅途中学到了很多东西（像是怎么炖美味的东方利维坦汤），但是他却还是没有自己创造者的线索。不过他却没有放弃，他加入了Apex
+													竞赛来吸引自己创造者的注意。同时，他保持积极乐观的态度并且非常喜欢交新朋友（然后射杀他们）。<br />
+													<b>真名：</b>马文<br />
+													<b>性别：</b>男<br />
+													<b>年龄：</b>77<br />
+													<b>身高：</b>6英尺2英寸（188厘米）<br />
+													<b>体重：</b>937磅（425公斤）<br />
+													<b>家园：</b>普萨玛忒<br />
+													<b>类型：</b>游击型<br />
+													<b>配音：</b>戴超行/Chris Edgerly<br />
+											</div>
+										</div>
+									</div>
+									<br>
+									<!-- 技能介绍 -->
+									<div class="row" id="jiqijineng">
+										<div class="col-md-12 bg-light bg-opacity-75">
+											<h1 class="bg-secondary text-center text-light" style="border-radius: 20px">探路者技能详情</h1>
+											<div class="row mt-3">
+												<div class="col-md-12">
+													<table class="table table-striped table-bordered">
+														<thead>
+															<tr>
+																<th colspan="3" class="bg-opacity-50 bg-secondary text-center">钩爪</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td rowspan="3" width="80px">
+																	<img src="img/钩爪.png" />
+																</td>
+																<td>技能类型</td>
+																<td style="text-align: left;">战术技能</td>
+															</tr>
+															<tr>
+																<td>冷却时间</td>
+																<td style="text-align: left;">10-30秒（根据移动距离而定）水平距离越远</td>
+															</tr>
+															<tr>
+																<td>技能简介</td>
+																<td style="text-align: left;">抓钩可以快速到达很远的地方。</td>
+															</tr>
+															<tr>
+																<td colspan="3" class="bg-opacity-25 bg-secondary text-center">技能描述</td>
+															</tr>
+															<tr>
+																<td colspan="3" rowspan="3">
+																	<div class="col-md-12">
+																		<ul class="nav nav-tabs justify-content-center" role="tablist">
+																			<li class="nav-item">
+																				<a class="nav-link active text-dark" data-bs-toggle="tab" href="#jiqihome2">信息</a>
+																			</li>
+																			<li class="nav-item">
+																				<a class="nav-link text-dark" data-bs-toggle="tab" href="#jiqimenu12">提示</a>
+																			</li>
+																			<li class="nav-item">
+																				<a class="nav-link text-dark" data-bs-toggle="tab" href="#jiqimenu22">建议</a>
+																			</li>
+																			<li class="nav-item">
+																				<a class="nav-link text-dark" data-bs-toggle="tab" href="#jiqimenu32">BUG</a>
+																			</li>
+																		</ul>
+																	</div>
+																	<div class="tab-content">
+																		<div class="tab-pane active container" id="jiqihome2">
+																			<ul class="text-danger">
+																				<li>抛出一个钩爪，钩住它碰到的第一个实体物体（包括玩家和滑索），并把你拉向它。</li>
+																				<li>抓钩的最大长度为21米。探路者的十字准心上有一个圆圈，它会变成蓝色，以指示你所指向的物体表面何时在抓钩范围内。</li>
+																				<li>通过瞄准侧面，你可以朝那个方向旋转，而不是被直接拉过去。在旋转90°后，抓钩将断开，你将保持移动</li>
+																				<li>抓钩也可以附着在玩家身上，将你们两个拉到一起。</li>
+																				<li>冷却时间的长短根据探路者移动的距离而定，更强调水平移动。当探路者的速度恢复到标准的冲刺速度或5秒后（以先到者为准），它会停止增加。</li>
+																			</ul>
+																		</div>
+																		<div class="tab-pane container" id="jiqimenu12">
+																			<ul class="text-danger">
+																				<li>如果你勾住滑索，当你到达滑索时，你会立即开始使用它。</li>
+																				<li>抓钩可以附着在密客的无人机、罗芭的黑市和沃特森的拦截塔上。</li>
+																				<li>勾住飞行中的瓦尔基里会把你拉向她，而不是把她拉向你。</li>
+																				<li>勾住滑索上的传奇将迫使他们从滑索脱离并拉向你。</li>
+																				<li>如果你被亡灵的沉默击中，使用中的抓钩将被取消。</li>
+																			</ul>
+																		</div>
+																		<div class="tab-pane container" id="jiqimenu22">
+																			<ul class="text-danger">
+																				<li>当你的钩爪附着到一个物体表面时，你会朝着你瞄准的方向慢慢向前移动。</li>
+																				<li>如果在保持不同方向移动的同时向某个物体抛出钩爪，你将在被拉向该物体的同时旋转，从而实现战术上的移动点位。</li>
+																				<li>在抓钩到达物体表面后立即跳跃将会给你提供额外的移动力。</li>
+																				<li>虽然它是一个到达高处点位或在地图上移动得更快的非常有用的工具，但它也可以用于偷侧身和躲避敌人，这通常会使战斗对你有利。</li>
+																				<li>记住，当抓钩收回时，你和被勾住的对手都可以继续射击。</li>
+																				<li>可以随时按下蹲键或攻击键取消。</li>
+																			</ul>
+																		</div>
+																		<div class="tab-pane container" id="jiqimenu32">
+																			<ul class="text-danger">
+																				<li>勾住一个与跳板组合的死亡盒将会导致其无限地向上飞行，而玩家仍然会勾住它。</li>
+																				<li>在使用抓钩前滑行将使玩家在半空中使用任何武器时都能获得100%的精准度。</li>
+																				<li>有时，在敌人附近使用抓钩会使钩爪出现故障，并使其勾在敌人身上。</li>
+																			</ul>
+																		</div>
+																	</div>
+																</td>
+															</tr>
+															<tr></tr>
+															<tr></tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+											<div class="row mt-3">
+												<div class="col-md-12">
+													<table class="table table-striped table-bordered">
+														<thead>
+															<tr>
+																<th colspan="3" class="bg-opacity-50 bg-secondary text-center">滑索枪</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td rowspan="3" width="80px">
+																	<img src="img/滑索.png" />
+																</td>
+																<td>技能类型</td>
+																<td style="text-align: left;">终极技能</td>
+															</tr>
+															<tr>
+																<td>冷却时间</td>
+																<td style="text-align: left;">120秒，可以通过充能塔直接清清除冷却时间或者通过绝招加速剂缩短冷却时间。</td>
+															</tr>
+															<tr>
+																<td>技能简介</td>
+																<td style="text-align: left;">可以制造一条人人皆可使用的滑索。</td>
+															</tr>
+															<tr>
+																<td colspan="3" class="bg-opacity-25 bg-secondary text-center">技能描述</td>
+															</tr>
+															<tr>
+																<td colspan="3" rowspan="3">
+																	<div class="col-md-12">
+																		<ul class="nav nav-tabs justify-content-center" role="tablist">
+																			<li class="nav-item">
+																				<a class="nav-link active text-dark" data-bs-toggle="tab" href="#jiqihome1">信息</a>
+																			</li>
+																			<li class="nav-item">
+																				<a class="nav-link text-dark" data-bs-toggle="tab" href="#jiqimenu11">提示</a>
+																			</li>
+																			<li class="nav-item">
+																				<a class="nav-link text-dark" data-bs-toggle="tab" href="#jiqimenu21">建议</a>
+																			</li>
+																		</ul>
+																	</div>
+																	<div class="tab-content">
+																		<div class="tab-pane active container" id="jiqihome1">
+																			<ul class="text-success">
+																				<li>在你的当前位置和目标位置之间制造一条滑索，你、你的队友和敌人可以使用它在这两个点之间快速移动。</li>
+																				<li>滑索的另一端可以连接到任何物体表面，使其能够引导玩家到达其他地方。</li>
+																				<li>滑索的最大长度为200米。最多可以在地图上同时放置4条滑索。</li>
+																			</ul>
+																		</div>
+																		<div class="tab-pane container" id="jiqimenu11">
+																			<ul class="text-success">
+																				<li>在准备使用滑索时可以放大视野3倍。</li>
+																				<li>当有移动的地图物体撞上绳索、脚下的地面或绳索终点的地面发生变化时，绳索会被摧毁，例如：
+																					<ul>
+																						<li>[世界尽头]熔岩虹吸的缆车</li>
+																						<li>[世界尽头]冬季特快的火车
+																							<ul>
+																								<li>如果在放置后3秒内被摧毁，将返还大招冷却。</li>
+																							</ul>
+																						</li>
+																					</ul>
+																				</li>
+																			</ul>
+																		</div>
+																		<div class="tab-pane container" id="jiqimenu21">
+																			<ul class="text-success">
+																				<li>滑索对于到达通常无法到达的位置、躲避一场无法获胜的战斗、或者只是在地图上快速移动（例如，为了逃离毒圈）非常有用。滑索可以部署到大多数物体表面，但某些结构
+																					<br>（地图框架）可能无法使用。你不能用它到达“地图之外”的区域。</li>
+																				<li>在紧急情况下，你可以通过选择任何其他物品（武器/治疗）或技能（抓钩）来中断滑索的使用。</li>
+																				<li>记住敌人也可以使用它们，不要被自己的滑索逼到绝境或被伏击！</li>
+																				<li>你还可以在逃跑后利用这一技能为敌方小队设置埋伏，从而迅速改变战局。</li>
+																				<li>记住，滑索是一条直线。不要把滑索直接架设到战场上。正面交锋会害死你。</li>
+																				<li>如果你认为你的小队处于危险位置，你可以架设滑索作为逃脱路线。即使你的小队可能不会立即使用它，你也可以将其用作快速逃脱路线。</li>
+																				<li>利用探路者的被动内部消息可以加快滑索的冷却时间。</li>
+																			</ul>
+																		</div>
+																	</div>
+																</td>
+															</tr>
+															<tr></tr>
+															<tr></tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+											<div class="row mt-3">
+												<div class="col-md-12">
+													<table class="table table-striped table-bordered">
+														<thead>
+															<tr>
+																<th colspan="3" class="bg-opacity-50 bg-secondary text-center">游击</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td rowspan="3" width="80px">
+																	<img src="img/游击.png" />
+																</td>
+																<td>技能类型</td>
+																<td style="text-align: left;">定位</td>
+															</tr>
+															<tr>
+																<td>冷却时间</td>
+																<td style="text-align: left;">无</td>
+															</tr>
+															<tr>
+																<td>技能简介</td>
+																<td style="text-align: left;">战斗机动与逃脱</td>
+															</tr>
+															<tr>
+																<td colspan="3" class="bg-opacity-25 bg-secondary text-center">技能描述</td>
+															</tr>
+															<tr>
+																<td colspan="3" rowspan="3">
+																	<div class="col-md-12">
+																		<ul class="nav nav-tabs justify-content-center" role="tablist">
+																			<li class="nav-item">
+																				<a class="nav-link active text-dark" data-bs-toggle="tab" href="#jiqihome3">信息</a>
+																			</li>
+																			<li class="nav-item">
+																				<a class="nav-link text-dark" data-bs-toggle="tab" href="#jiqimenu13">提示</a>
+																			</li>
+																		</ul>
+																	</div>
+																	<div class="tab-content">
+																		<div class="tab-pane active container" id="jiqihome13">
+																			<ul class="text-primary">
+																				<li>揭开补给仓以查看其中的高价值物品。</li>
+																			</ul>
+																		</div>
+																		<div class="tab-pane container" id="jiqimenu13">
+																			<ul class="text-primary">
+																				<li>当下一轮补给仓开始投放时，可以再次使用。扫描补给仓会刷新大招冷却</li>
+																			</ul>
+																		</div>
+																	</div>
+																</td>
+															</tr>
+															<tr></tr>
+															<tr></tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- 皮肤展示  卡片 -->
+									<div class="row mt-3" id="jiqipifu">
+										<div class="col-md-12 bg-light bg-opacity-75">
+											<h1 class="bg-secondary text-center text-light" style="border-radius: 20px">探路者皮肤展示</h1>
+											<div class="row" style="margin-left: 30px;">
+												<div class="col-md-4">
+													<div class="container mt-3">
+														<h2 style="margin-left: 80px;" class="text-warning">传说皮肤</h2>
+														<div class="card" style="width:300px">
+															<img class="card-img-top" src="img/机器人皮肤1.png" alt="Card image" style="width:100%">
+															<div class="card-body">
+																<h4 class="card-title text-center">War Machine
+																	<br>铁王冠战争机器</h4>
+																<p class="card-text"></p>
+																<a href="#" class="btn btn-primary" style="margin-left: 70px;">查看图片</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="container mt-3">
+														<h2 style="margin-left: 80px;" class="text-info">史诗皮肤</h2>
+														<div class="card" style="width:300px">
+															<img class="card-img-top" src="img/机器人皮肤2.png" alt="Card image" style="width:100%">
+															<div class="card-body">
+																<h4 class="card-title text-center">Best Friend
+																	<br>最好的朋友</h4>
+																<p class="card-text"></p>
+																<a href="#" class="btn btn-primary" style="margin-left: 80px;">查看图片</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="container mt-3">
+														<h2 style="margin-left: 80px;" class="text-success">稀有皮肤</h2>
+														<div class="card" style="width:300px">
+															<img class="card-img-top" src="img/机器人皮肤3.png" alt="Card image" style="width:100%">
+															<div class="card-body">
+																<h4 class="card-title text-center">Circuit Breaker
+																	<br>断路器</h4>
+																<p class="card-text"></p>
+																<a href="#" class="btn btn-primary" style="margin-left: 80px;">查看图片</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- mdy大家庭 -->
+									<div class="row mt-3" id="jiqimdy">
+										<div class="col-md-12 bg-light bg-opacity-50">
+											<h1 class="bg-secondary text-center text-light" style="border-radius: 20px">APEX最唐mdy</h1>
+											<div class="row mt-3">
+												<div class="col-md-4">
+													<a href="https://search.bilibili.com/all?keyword=%E7%94%9C%E8%8D%AF&from_source=webtop_search&spm_id_from=333">
+														<img src="img/甜药.jpg" width="350px" height="350px" class="jiqiimg1 rounded-circle" />
+													</a>
+												</div>
+												<div class="col-md-4">
+													<a href="https://space.bilibili.com/51628309?spm_id_from=333.337.0.0">
+														<img src="img/狙狙的荣誉.jpg" width="350px" height="350px" class="jiqiimg" />
+													</a>
+												</div>
+												<div class="col-md-4">
+													<a href="https://search.bilibili.com/all?keyword=%E4%BA%94%E6%9B%B4%E6%98%8E%E6%9C%88&from_source=webtop_search&spm_id_from=333">
+														<img src="img/五更明月.png" width="350px" height="350px" class="jiqiimg1 rounded-circle" />
+													</a>
+												</div>
+											</div>
+											<!-- 模态框 -->
+											<div class="row">
+												<div class="col-md-12 justify-content-center d-flex">
+													<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#jiqimyModal">
+														点击查看世界哥<br>
+														狙狙公主
+													</button>
+													<div class="modal" id="jiqimyModal">
+														<div class="modal-dialog">
+															<div class="modal-content" style="background-image: url(img/粉色.jpg);">
+																<div class="modal-header">
+																	<h4 class="modal-title text-danger text-opacity-75">现在为你们展示的是apex最唐<br>
+																		为万千ftj所拥护的飞天狙桑</h4>
+																	<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+																</div>
+																<div class="modal-body">
+																	<img src="img/狙狙.jpg" width="400px" height="400px" />
+																	<br>
+																	<b class="text-center">狙神时代，沸腾期待！！！</b>
+																</div>
+																<div class="modal-footer justify-content-center">
+																	<button type="button" class="btn btn-warning" data-bs-dismiss="modal">关闭</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- mdy人物介绍 -->
+									<div class="row mt-3" id="jiqijieshao">
+										<div class="col-md-12 bg-light bg-opacity-75">
+											<h1 class="bg-secondary text-center text-light" style="border-radius: 20px">mdy人物介绍</h1>
+											<div class="row mt-3">
+												<div class="col-md-2 bg-light bg-opacity-50">
+													<ul class="nav nav-tabs flex-column text-center">
+														<li class="nav-item">
+															<a class="nav-link active" data-bs-toggle="tab" href="#jiqihome4">飞天狙</a>
+														</li>
+														<li class="nav-item">
+															<a class="nav-link" data-bs-toggle="tab" href="#jiqimenu14">天才美少女卡莎</a>
+														</li>
+														<li class="nav-item">
+															<a class="nav-link" data-bs-toggle="tab" href="#jiqimenu24">甜药</a>
+														</li>
+														<li class="nav-item">
+															<a class="nav-link" data-bs-toggle="tab" href="#jiqimenu34">老吊</a>
+														</li>
+														<li class="nav-item">
+															<a class="nav-link" data-bs-toggle="tab" href="#jiqimenu44">五更明月</a>
+														</li>
+													</ul>
+												</div>
+												<div class="col-md-1"></div>
+												<div class="col-md-9">
+													<div class="tab-content">
+														<div class="tab-pane active container text-light" id="jiqihome4" style="background-color: #25CFF2;opacity: 50%;height: 200px;">
+															<br><br><br>
+															飞天狙在虎牙直播。飞天是apex英雄的游戏主播，日常主要直播的游戏为APEX。由于其又唐又强的性格与技术收获一大批粉丝，既可以在直播中乱杀，也可以搞节目效果带给观众快乐。同时获得了线下世界塞得名额，被粉丝称为"世界狙"。
+														</div>
+														<div class="tab-pane container text-primary" id="jiqimenu14" style="background-color: #F1AEB5;opacity: 50%;height: 200px;">
+															<br><br><br>
+															天才美少女卡莎个人综合实力排名第一。具体如下：1、优秀的被动机制兼顾百分比输出。2、优秀的单体爆发、推线Q。3、优秀的对线消耗，追击，后期poke能力W。4、优秀的反制能力，加速能力E。5、优秀的逃生能力，反打能力R。
+														</div>
+														<div class="tab-pane container text-info" id="jiqimenu24" style="background-color: #6F42C1;opacity: 50%;height: 200px;">
+															<br><br><br>
+															apex甜药是游戏《apex》的职业选手绪主播，由于技术很好，很多人喜欢，直播风格也很好，吸粉不少，没有人骂他，风评很好。是mdy1.0的指挥，后因为胃病退赛。
+														</div>
+														<div class="tab-pane container text-success" id="jiqimenu34" style="background-color: #D4A518;opacity: 50%;height: 200px;">
+															<br><br><br>
+															老吊的收残能力真有点东南亚顶级的味道了。基本能稳定1v1，甚至1v1.5，是现役mdyw主力队员以至于现在看3v3看到狙狙月月各自换倒一个老吊1v1我就觉得这把有了。因此被粉丝称为子龙。
+														</div>
+														<div class="tab-pane container text-warning" id="jiqimenu44" style="background-color: green;opacity: 50%;height: 200px;">
+															<br><br><br>
+															Mingyue与卡尔、小凯三人组成“三个帅哥”战队，先后征战了斗鱼邀请赛、星空杯S2两个比赛。随后， Mingyue被Jamren邀请，与LD一同组成LNR获得第一届斗鱼捍卫者杯的第五名.
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- 进度条 -->
+									<div class="row mt-3 bg-light bg-opacity-50" id="jiqitangshi">
+										<h1 class="bg-secondary text-center text-light" style="border-radius: 20px">唐氏程度</h1>
+										<div class="row" style="margin-left: 3px;">
+											<div class="progress" style="height: 50px;">
+												<div class="mt-3">飞狙：</div>
+												<div class="progress-bar bg-success" style="width:90%;">100%</div>
+											</div>
+											<div class="progress" style="height: 50px;">
+												<div class="mt-3">明月：</div>
+												<div class="progress-bar bg-info" style="width:80%;">80%</div>
+											</div>
+											<div class="progress" style="height: 50px;">
+												<div class="mt-3">甜药：</div>
+												<div class="progress-bar bg-warning" style="width:60%;">60%</div>
+											</div>
+											<div class="progress" style="height: 50px;">
+												<div class="mt-3">老吊：</div>
+												<div class="progress-bar bg-secondary" style="width:40%;">40%</div>
+											</div>
+											<div class="progress" style="height: 50px;">
+												<div class="mt-3">卡莎：</div>
+												<div class="progress-bar bg-danger" style="width:20%;">20%</div>
+											</div>
+										</div>
+									</div>
+									<!-- 页脚 -->
+									<div class="container-fluid fixed-bottom mt-5 bg-secondary">
+										<div class="row mt-3">
+											<div class="col-3"></div>
+											<div class="col-3 text-center"></div>
+											<div class="col-3 text-center"></div>
+											<div class="col-3"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row" style="position: fixed; top: 50%; right: -2%; transform: translateY(-50%);">
+								<div class="col-4">
+									<div id="list-example" class="list-group" style="font-size: 12px;">
+										<a class="list-group-item list-group-item-action text-center s3" style="height: 70px; background-color:pink;"
+										 href="#jiqidemo">顶部</a>
+										<a class="list-group-item list-group-item-action text-center s3" style="height: 70px; background-color:pink;"
+										 href="#jiqirenwu">简介</a>
+										<a class="list-group-item list-group-item-action text-center s3" style="height: 70px; background-color:pink;"
+										 href="#jiqijineng">技能</a>
+										<a class="list-group-item list-group-item-action text-center s3" style="height: 70px; background-color:pink;"
+										 href="#jiqipifu">皮肤</a>
+										<a class="list-group-item list-group-item-action text-center s3" style="height: 70px; background-color:pink;"
+										 href="#jiqimdy">mdy</a>
+										<a class="list-group-item list-group-item-action text-center s3" style="height: 70px; background-color:pink;"
+										 href="#jiqijieshao">mdy<br>人物介绍</a>
+										<a class="list-group-item list-group-item-action text-center s3" style="height: 70px; background-color:pink;"
+										 href="#jiqitangshi">唐氏程度</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 鲍俊辰的页面 -->
+				<div id="menu2" class="container-fluid tab-pane fade d1"><br>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-12 bg-white bg-opacity-75">
+								<div class="row bg-white">
+									<div id="Wraith" class="carousel slide" data-bs-ride="carousel">
+
+										<!-- 指示符 -->
+										<div class="carousel-indicators">
+											<button type="button" data-bs-target="#Wraith" data-bs-slide-to="0" class="active"></button>
+											<button type="button" data-bs-target="#Wraith" data-bs-slide-to="1"></button>
+											<button type="button" data-bs-target="#Wraith" data-bs-slide-to="2"></button>
+										</div>
+
+										<!-- 轮播图片 -->
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="img/恶灵1.jpg" class="d-block" style="width:100%">
+											</div>
+											<div class="carousel-item">
+												<img src="img/恶灵2.jpg" class="d-block" style="width:100%">
+											</div>
+											<div class="carousel-item">
+												<img src="img/恶灵3.png" class="d-block" style="width:100%">
+											</div>
+										</div>
+
+										<!-- 左右切换按钮 -->
+										<button class="carousel-control-prev" type="button" data-bs-target="#Wraith" data-bs-slide="prev">
+											<span class="carousel-control-prev-icon"></span>
+										</button>
+										<button class="carousel-control-next" type="button" data-bs-target="#Wraith" data-bs-slide="next">
+											<span class="carousel-control-next-icon"></span>
+										</button>
+									</div>
+								</div>
+
+								<!-- 卡片和图片展示 -->
+								<div class="row">
+									<div class="container-fluid myfox" id="Wraith-imc">
+										<div class="row">
+											<div class="col">
+												<div class="row mt-3 ms-12">
+													<div class="col-4">
+														<div class="row mt-3">
+															<h2 class="text-center text-light bg-info bg-gradient rounded-5">恶灵</h2>
+														</div>
+														<div class="container mt-3 text-center">
+															<img src="img/恶灵图鉴.png" />
+														</div>
+													</div>
+
+													<div class="col-8">
+														<div class="row mt-3">
+															<h2 class="text-center text-light bg-info bg-gradient rounded-5">恶灵可公开档案
+															</h2>
+														</div>
+														<div style="line-height:27px">
+															<h2><span></span><span class="mw-headline">次元游击兵</span></h2>
+															<hr />
+															<p>恶灵是一名如旋风般的战士，她能够递出快速且致命的攻击并透过撕开现实裂缝来操控时空－－但是她自己也不知道这个能力是怎么来的。几年前，她在IMC
+																的精神病禁闭设施中醒来并且没有任何过去的回忆。她还开始在脑海中听见遥远的细语，这更让她常常难以入睡。尽管她几近崩溃，当她开始仔细聆听此声音并且信任它时，这道声音却帮助她掌握操控虚空的能力并让她得以逃脱那栋禁闭设施。
+															</p>
+															<br>
+															<b>真名：</b>芮妮‧霍普‧布莱希<br>
+															<b>性别：</b>女<br>
+															<b>年龄：</b>34<br>
+															<b>身高：</b>5英尺4英寸（163厘米）<br>
+															<b>体重：</b>未知<br>
+															<b>家园：</b>堤丰星<br>
+															<b>类型：</b>游击型<br>
+															<b>配音：</b>张琦/Shantel VanSanten<br>
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- 技能 -->
+								<div class="container-fluid myfox" id="Wraith-bwl">
+									<div class="row">
+										<div class="col">
+											<div class="row mt-3">
+												<h2 class="text-center text-light bg-info bg-gradient rounded-5">恶灵技能介绍</h2>
+											</div>
+											<!-- 表格 -->
+											<div class="row">
+												<div class="container mt-3">
+													<table class="table-bordered container">
+														<tbody>
+															<tr>
+																<th colspan="5" style="text-align: center; background-color:#efefef;width:100%">
+																	踏入虚空
+																</th>
+															</tr>
+															<tr>
+																<td rowspan="3" colspan="2" style="width:100px;"><img src="img/踏入虚空.png""
+																			decoding="
+																	 async" width="100" height="100" data-file-width="100" data-file-height="100"></a>
+																</td>
+																<td style="text-align: center;background-color:#efefef; color:#333333;width:10%">
+																	技能类型
+																</td>
+																<td colspan="2" style="width:80%">战术技能
+																</td>
+															</tr>
+															<tr>
+																<td style="text-align: center;background-color:#efefef;">冷却时间
+																</td>
+																<td colspan="2" style="width:80%">25秒
+																</td>
+															</tr>
+															<tr>
+																<td style="text-align: center;background-color:#efefef;">技能简介
+																</td>
+																<td colspan="2" style="width:80%">利用“虚空”空间快速变换阵地，避免所有伤害
+																</td>
+															</tr>
+															<tr>
+																<td colspan="5" style="text-align: center;background-color:#efefef;width:100%">
+																	技能描述
+																</td>
+															</tr>
+															<!-- 设置按钮并点击按钮显示影藏的信息 -->
+															<tr>
+																<td colspan="7">
+																	<div class="container-fluid">
+																		<div class="row col-md-12">
+																			<ul class="nav nav-tabs mt-3">
+																				<li class="nav-item">
+																					<a class="nav-link active" data-bs-toggle="tab" href="#xinxi1">信息</a>
+																				</li>
+																				<li class="nav-item">
+																					<a class="nav-link" data-bs-toggle="tab" href="#tishi1">提示</a>
+																				</li>
+																				<li class="nav-item">
+																					<a class="nav-link" data-bs-toggle="tab" href="#jianyi1">建议</a>
+																				</li>
+																				<li class="nav-item">
+																					<a class="nav-link" data-bs-toggle="tab" href="#bug1">BUG</a>
+																				</li>
+																			</ul>
+																		</div>
+																		<div class="tab-content col-md-11">
+																			<div class="tab-pane active container" id="xinxi1">
+																				<div>
+																					<ul>
+																						<li>恶灵在激活这个技能时会触发两个动画，总共需要1.25秒。在第一秒时，她触发了一个“聚焦”动画。在最后0.25秒内，恶灵“激活”了这个技能。
+																							<ul>
+																								<li>恶灵在使用空间裂隙时跳过“聚焦”动画。<br><br>
+																								</li>
+																							</ul>
+																						</li>
+																					</ul>
+																					<ul>
+																						<li>进入和离开虚空时会有短暂的延迟，在此期间恶灵无法执行任何其他动作。除非空间裂隙也被激活，否则移动速度也会减慢20%。
+																						</li>
+																						<li>激活后，恶灵进入虚空4秒。在虚空中，屏幕将变灰，玩家将变得无懈可击，并将获得30%的速度提升。玩家仍然可以看到敌人。
+																						</li>
+																						<li>其他玩家可以看到一条微弱的蓝色轨迹，显示玩家在虚空中的去向。</li>
+																						<li>在虚空中，恶灵无法与地图上的某些物体互动，包括门和由技能放置的物体，但可以使用滑索。
+																							<p class="mw-empty-elt"></p>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
+																			<div class="tab-pane container" id="tishi1">
+																				<div>
+																					<ul>
+																						<li>玩家可以在使用空间裂隙时使用此技能。</li>
+																						<li>在虚空中，恶灵不会给寻血猎犬的追踪留下任何线索。然而，进入和退出阶段都有独特的线索。
+																						</li>
+																						<li>如果恶灵被亡灵的沉默击中（在激活之前），该技能将不会激活。一旦沉默结束，恶灵将能够再次使用它。
+																						</li>
+																						<li>在虚空状态下，如果装备了4级扩容弹匣，武器仍然会自动换弹。</li>
+																						<li>在传送门启动前立即进入将停止该技能的激活。</li>
+																						<li>爬墙会取消该技能的激活。<p class="mw-empty-elt">
+																							</p>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
+																			<div class="tab-pane container" id="jianyi1">
+																				<div>
+																					<ul>
+																						<li>这个技能需要1.25秒才能激活，所以在使用它作为逃生工具时要小心剩余的生命值；试着在生命值大约一半的时候使用它。
+																						</li>
+																						<li>在离开虚空时，一定要到达安全的地方，因为在做其他事情之前会有延迟。<p class="mw-empty-elt"></p>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
+																			<div class="tab-pane container" id="bug1">
+																				<div>
+																					<ul>
+																						<li>在虚空中进入拳击台的恶灵将在技能结束后拿出武器（17赛季）</li>
+																						<li>如果玩家在踏入虚空之前激活了他们的终极技能，它将不会激活。</li>
+																						<li>在极少数情况下，恶灵仍然可以在使用该技能时受到伤害。
+																							<ul>
+																								<li>更有甚者在因此倒地之后拿出武器对敌人造成伤害<p class="mw-empty-elt">
+																									</p>
+																								</li>
+																							</ul>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+											<br />
+											<div class="row">
+												<div class="container mt-3">
+													<table class="table-bordered container">
+														<tbody>
+															<tr>
+																<th colspan="5" style="text-align: center; background-color:#efefef;width:100%">
+																	虚空之声
+																</th>
+															</tr>
+															<tr>
+																<td rowspan="3" colspan="2" style="width:100px;"><img src="img/虚空之声.png" decoding=" async" width="100"
+																	 height="100" data-file-width="100" data-file-height="100"></a>
+																</td>
+																<td style="text-align: center;background-color:#efefef; color:#333333;width:10%">
+																	技能类型
+																</td>
+																<td colspan="2" style="width:80%">被动技能
+																</td>
+															</tr>
+															<tr>
+																<td style="text-align: center;background-color:#efefef;">冷却时间
+																</td>
+																<td colspan="2" style="width:80%">无
+																</td>
+															</tr>
+															<tr>
+																<td style="text-align: center;background-color:#efefef;">技能简介
+																</td>
+																<td colspan="2" style="width:80%">危险临近时你会听见一个声音，它似乎和你是同一战线的。
+																</td>
+															</tr>
+															<tr>
+																<td colspan="5" style="text-align: center;background-color:#efefef;width:100%">
+																	技能描述
+																</td>
+															</tr>
+															<!-- 设置按钮并点击按钮显示影藏的信息 -->
+															<tr>
+																<td colspan="7">
+																	<div class="container-fluid">
+																		<div class="row col-md-12">
+																			<ul class="nav nav-tabs mt-3">
+																				<li class="nav-item">
+																					<a class="nav-link active" data-bs-toggle="tab" href="#xinxi2">信息</a>
+																				</li>
+																				<li class="nav-item">
+																					<a class="nav-link" data-bs-toggle="tab" href="#tishi2">提示</a>
+																				</li>
+																				<li class="nav-item">
+																					<a class="nav-link" data-bs-toggle="tab" href="#jianyi2">建议</a>
+																				</li>
+																				<li class="nav-item">
+																					<a class="nav-link" data-bs-toggle="tab" href="#bug2">BUG</a>
+																				</li>
+																			</ul>
+																		</div>
+																		<div class="tab-content col-md-11">
+																			<div class="tab-pane active container" id="xinxi2">
+																				<div>
+																					<ul>
+																						<li>如果出现以下情况，玩家会听到恶灵的声音警告玩家：
+																							<ul>
+																								<li>敌人正在瞄准</li>
+																								<li>敌人正在使用狙击枪瞄准</li>
+																								<li>附近有陷阱</li>
+																								<li>附近有很多敌人</li>
+																								<li>许多人在附近阵亡<br><br></li>
+																							</ul>
+																						</li>
+																					</ul>
+																					<ul>
+																						<li>当发出危险警告声音时，玩家可以与队友分享信息。<p class="mw-empty-elt"></p>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
+																			<div class="tab-pane container" id="tishi2">
+																				<div>
+																					<ul>
+																						<li>“附近有陷阱”警告由侵蚀的毒气罐和沃特森的电网触发。</li>
+																						<li>如果他们通过窗口瞄准玩家，则也会被激活。<p class="mw-empty-elt"></p>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
+																			<div class="tab-pane container" id="jianyi2">
+																				<div>
+																					<ul>
+																						<li>当有人瞄准时，来自虚空的声音会警告玩家，玩家可以轻松地进入开阔地带，减少危险，前提是附近有掩体可以撤退。当与踏入虚空技能相结合时，这种被动可以让躲避伏击变得非常容易。
+																							<p class="mw-empty-elt"></p>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
+																			<div class="tab-pane container" id="bug2">
+																				<div>
+																					<ul>
+																						<li>有时声音不会激活。<p class="mw-empty-elt"></p>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+											<br />
+											<div class="row">
+												<div class="container mt-3">
+													<table class="table-bordered container">
+														<tbody>
+															<tr>
+																<th colspan="5" style="text-align: center; background-color:#efefef;width:100%">
+																	空间裂隙
+																</th>
+															</tr>
+															<tr>
+																<td rowspan="3" colspan="2" style="width:100px;"><img src="img/空间裂隙.png" decoding=" async" width="100"
+																	 height="100" data-file-width="100" data-file-height="100"></a>
+																</td>
+																<td style="text-align: center;background-color:#efefef; color:#333333;width:10%">
+																	技能类型
+																</td>
+																<td colspan="2" style="width:80%">终极技能
+																</td>
+															</tr>
+															<tr>
+																<td style="text-align: center;background-color:#efefef;">冷却时间
+																</td>
+																<td colspan="2" style="width:80%">210秒
+																</td>
+															</tr>
+															<tr>
+																<td style="text-align: center;background-color:#efefef;">技能简介
+																</td>
+																<td colspan="2" style="width:80%">用传送门连通2处地点，持续时间45秒。
+																</td>
+															</tr>
+															<tr>
+																<td colspan="5" style="text-align: center;background-color:#efefef;width:100%">
+																	技能描述
+																</td>
+															</tr>
+															<!-- 设置按钮并点击按钮显示影藏的信息 -->
+															<tr>
+																<td colspan="7">
+																	<div class="container-fluid">
+																		<div class="row col-md-12">
+																			<ul class="nav nav-tabs mt-3">
+																				<li class="nav-item">
+																					<a class="nav-link active" data-bs-toggle="tab" href="#xinxi3">信息</a>
+																				</li>
+																				<li class="nav-item">
+																					<a class="nav-link" data-bs-toggle="tab" href="#tishi3">提示</a>
+																				</li>
+																				<li class="nav-item">
+																					<a class="nav-link" data-bs-toggle="tab" href="#jianyi3">建议</a>
+																				</li>
+																			</ul>
+																		</div>
+																		<div class="tab-content col-md-11">
+																			<div class="tab-pane active container" id="xinxi3">
+																				<div>
+																					<ul>
+																						<li>恶灵将传送门的一端放置在激活该技能的地方，然后跑到另一个位置，放置在另一端。然后，玩家可以通过传送门以同样的路径以5倍的速度穿过虚空。它可以在任何一端使用。
+																						</li>
+																						<li>恶灵在放置传送门的另一端之前可以跑大约152米。裂隙能量在激活时显示在屏幕顶端，并且静止不动时不会消耗。
+																						</li>
+																						<li>如果恶灵使用的裂隙能量低于4.72%，那么放置传送门的另一端，它将被取消，从而使她的终极技能充能值保持在100%。
+																						</li>
+																						<li>在跑向另一端时，恶灵不能使用任何武器、道具或地图功能，但她可以获得25%的速度加成，并可以跳过踏入虚空的“聚焦”动画。
+																						</li>
+																						<li>恶灵在放置自己的裂隙时不能使用另一个维度的裂隙，也就是说，她只是简单地穿过裂隙而不会进入它。
+																						</li>
+																						<li>进入传送门的玩家是无懈可击的，并且会留下一条微弱的蓝色轨迹，就像恶灵在踏入虚空时一样。
+																						</li>
+																						<li>如果两端都在毒圈外，传送门将在四个滴答声（4.5到6秒）后消失。</li>
+																						<li>在创建更长的传送门时，恶灵现在会随着裂隙能量的减少而提高速度<p class="mw-empty-elt"></p>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
+																			<div class="tab-pane container" id="tishi3">
+																				<div>
+																					<ul>
+																						<li>放置传送门时的速度加成不会与踏入虚空的速度加成叠加。</li>
+																						<li>玩家是唯一能够通过传送门的东西。任何子弹、物体、密客无人机或幻象诱饵都不能使用它们。
+																						</li>
+																						<li>沃特森的电网可以与传送门相交，因为它是无形的。</li>
+																						<li>玩家在被亡灵的死亡图腾召回后两秒内不能使用传送门。</li>
+																						<li>可以被地平线的黑洞摧毁。<p class="mw-empty-elt"></p>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
+																			<div class="tab-pane container" id="jianyi3">
+																				<div>
+																					<ul>
+																						<li>当小队陷入角落时，这种能力最适合用来帮助他们逃脱。</li>
+																						<li>如果操作正确，传送门可以帮助被击倒的队友快速移动或诱饵敌人。</li>
+																						<li>玩家可以在放置传送门时使用他们的技能。</li>
+																						<li>传送门裂隙跟随玩家，并放置在玩家面对的方向。</li>
+																						<li>多个玩家可以同时进入传送门，而不是等待一个玩家退出后才行。</li>
+																						<li>将传送门的出口放置在地图的边缘，并引诱任何敌人进入传送门，都可能导致他们坠亡或落入造成环境破坏的地图要素中。这样做时要小心，因为玩家的队友可能会成为这种方法的受害者。
+																						</li>
+																						<li>如果在使用“踏入空隙”时放置传送门，则该阶段将被取消，传送门将被放置。如果需要的话，这可以用来在技能结束之前恢复执行正常动作的能力。
+																						</li>
+																						<li>该技能还可以通过将传送门放置在敌人的上方，暂时将他们与小队分开，从而使玩家或小队更容易地将他们击倒。
+																							<p class="mw-empty-elt"></p>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+											<br />
+											<div class="row">
+												<div class="container mt-3">
+													<table class="table-bordered container">
+														<tbody>
+															<tr>
+																<th colspan="5" style="text-align: center; background-color:#efefef;width:100%">
+																	游击
+																</th>
+															</tr>
+															<tr>
+																<td rowspan="3" colspan="2" style="width:100px;"><img src="img/游击.png" decoding=" async" width="100"
+																	 height="100" data-file-width="100" data-file-height="100"></a>
+																</td>
+																<td style="text-align: center;background-color:#efefef; color:#333333;width:10%">
+																	技能类型
+																</td>
+																<td colspan="2" style="width:80%">定位
+																</td>
+															</tr>
+															<tr>
+																<td style="text-align: center;background-color:#efefef;">冷却时间
+																</td>
+																<td colspan="2" style="width:80%">无
+																</td>
+															</tr>
+															<tr>
+																<td style="text-align: center;background-color:#efefef;">技能简介
+																</td>
+																<td colspan="2" style="width:80%">战斗机动与逃脱
+																</td>
+															</tr>
+															<tr>
+																<td colspan="5" style="text-align: center;background-color:#efefef;width:100%">
+																	技能描述
+																</td>
+															</tr>
+															<!-- 设置按钮并点击按钮显示影藏的信息 -->
+															<tr>
+																<td colspan="7">
+																	<div class="container-fluid">
+																		<div class="row col-md-12">
+																			<ul class="nav nav-tabs mt-3">
+																				<li class="nav-item">
+																					<a class="nav-link active" data-bs-toggle="tab" href="#xinxi4">信息</a>
+																				</li>
+																				<li class="nav-item">
+																					<a class="nav-link" data-bs-toggle="tab" href="#tishi4">提示</a>
+																				</li>
+																			</ul>
+																		</div>
+																		<div class="tab-content col-md-11">
+																			<div class="tab-pane active container" id="xinxi4">
+																				<div>
+																					<ul>
+																						<li>揭开补给仓以查看其中的高价值物品。<p class="mw-empty-elt"></p>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
+																			<div class="tab-pane container" id="tishi4">
+																				<div>
+																					<ul>
+																						<li>当下一轮补给仓开始投放时，可以再次使用。<p class="mw-empty-elt"></p>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+											<!-- 故事 -->
+											<div class="container-fluid myfox" id="Wraith-story">
+												<div class="row">
+													<div class="col">
+														<div class="row mt-3">
+															<h2 class="text-center text-light bg-info bg-gradient rounded-5">恶灵故事
+															</h2>
+														</div>
+														<div style="line-height:27px">
+
+															“恶灵”Renee
+															Blasey（为方便阅读，以下简称恶灵）出生于因储藏IMC的可折叠武装而臭名昭著的提丰星。她曾在ARES部门担任高级科学铁驭。在和同事Amer
+															Singh 一起进行的一项代号为“项目：恶灵”的研究中，恶灵
+															测试了相位转移技术。在她的原初维度中，IMC在边境战争中击退了反抗军并获得了胜利。<br>
+															可接下来两位科学家却找不到愿意参加该实验的志愿者，所以 恶灵
+															自愿参加该项实验，被并指定为61137号实验体。但实验出现了差错，她失去了几乎所有的记忆并因为听到不知来源的声音而陷入了疑似精神错乱的状态。她的同事Singh面对此情况不但没有选择帮助她，反而利用这一点对已经失忆且毫不知情的
+															恶灵 继续进行实验。恶灵 描述自己在事故后的第一份记忆是被绑在轮床上并被堵住了嘴。而后 恶灵 被“官方”带到索雷斯星以终止合作。<br>
+															虚空行者<br>
+															在2727年的某一天，一个跨纬度传送门出现在了Singh实验室，一位身穿白色战衣头戴紫色头盔的战士拜访了 恶灵 ，她告诉 恶灵
+															自己是来自另一个宇宙的恶灵，被称为“虚空行者”，她此行的目的是来对Singh复仇。虚空行者 解救了 恶灵
+															并为她提供了跨纬度相位转移旅行所需的技术，还有一把苦无。在让 恶灵 离开后，虚空行者 独自留下来与Singh和她的IMC士兵对抗。<br>
+
+															进入传送门之后，恶灵
+															发现她之前听到的声音都是来自不同维度的自己，所有的交流都来自于这个介于现实之间的地方。在离开这个空间之后，她发现自己来到了虚空行者的维度，Singh实验室已经被遗弃。她随手拿起一块布作为围巾并离开了实验室。出实验室后她发现实验室周围的正在为一个名为Apex的竞赛进行建设。<br>
+
+															恶灵 开始探索诸王峡谷，对其与自己家乡维度的差异感到困惑，最初她以为自己是岛上唯一存活的人。<br>
+
+															在她出现的第五天，恶灵
+															听到岛上有一个男人正在呼唤一位名Natalie的人。她将其错认为这是她自我身份的暗示，认为自己就是这位Natalie。经过进一步调查，她认为自己的名字是Natalie
+															Paquette并嫁给了这个男人。<br>
+
+															在第八天，恶灵 发现了一位年轻女孩，她进入了Singh实验室试图拿走两个护盾。恶灵 并不知道这位女孩正是正在制作Apex竞赛热辐射圈实验的年轻的
+															<a href="/apex/Wattson" title="Wattson">沃特森</a>
+															。她误认为沃特森是来刺杀她“丈夫“的刺客并命令她离开。可沃特森实验出了差错并失火烧毁了本该名为”破碎森林“的区域。令人意外的是，恶灵 救了
+															沃特森 一命，并将她带到了Paquette家的小屋。此时她才知道她怀中的这位女孩才真正的Natalie。<br>
+
+															恶灵 对此感到羞愧，返回到了Singh实验室，Luc Paquette给她提供了离开岛屿的方法以感谢她救了女儿的命。
+															她驾驶着飞船前往索雷斯星，在那里她向自己发誓，她将以某种方式返回诸王峡谷和Singh实验室，寻找有关她过去的任何线索。
+															Singh实验室第二天被掩埋，沃特森 从那天起将拯救她的人称为“她的幽灵”。<br>
+
+															恶灵 在接下来的几年里为Apex
+															Games训练并参加定级赛，最终成为了一名传奇。<br><br><big><b>第二赛季</b></big><br>
+															在诸王峡谷的驱散塔被摧毁后，Singh实验室被挖掘出来。 恶灵
+															回到了这个建筑，在那里她发现了她真正的名字和她的实验目的。<br><br><big><b>破碎幽灵</b></big><br>
+															在 <a href="/apex/Loba" title="Loba">萝芭</a>
+															加入Apex竞赛后，她向其他传奇寻求帮助，在暗影坠落维度的诸王峡谷寻找神器碎片。由于她的传送门，恶灵
+															不情愿地作为小组“进出维度“的工具人被征召入伍。她监视着<a href="/apex/Octane" title="Octane">动力小子</a>与哈蒙德法律部负责人 谢丽尔·阿马奇 的助手
+															洋子·泽普纽斯基
+															的“约会”，试图了解有关该神器是什么 以及 萝芭 想要用它做什么，然而，谈话进行到一半，恶灵 就被告知 沃特森
+															受了重伤，之后便用传送门把动力小子带回了基地。在 <a href="/apex/Crypto" title="Crypto">密客</a>
+															被诬陷为小组内的间谍后，她便将 沃特森 带回了自己家。<br><br><big><b>第一艘船</b></big><br>
+															恶灵 帮助 <a href="/apex/Rampart" title="Rampart">兰伯特</a>
+															为她的大改装店找到了一个新的位置——天堂酒吧 旁边的一个房间里，这让 <a href="/apex/Mirage" title="Mirage">幻象</a> 非常懊恼。然而这对他们双方都有好处。兰伯特
+															在她在 盖亚星
+															的大改装店遭到袭击后一直在寻找新的地点，而 幻象 则迫切需要 兰伯特 提供的租金，因为他自己花了很多钱在他的 幻象邮轮 上。幻象
+															后来试图告诉恶灵 关于 探路者
+															的“女朋友”的消息，但她无视了幻象。<br><br><big><b>加时（APEX迷你漫画）</b></big><br>
+															2733年的某一个星期六，刚完成了一场 Apex 竞赛的恶灵在索雷斯城闲逛时，遇到了刚从与 <a href="/apex/Revenant" title="Revenant">亡灵</a> 的交战中逃离的
+															幻象，他手上还拿着一个金属公文包。两人打开公文包发现了一个加密通信单元，幻象 让 恶灵 对公文包的主人—— 威利斯老板 进行反击。 当 威利斯
+															的飞船到达高空后，恶灵 从传送门中出现，并与 幻象 和 密客 一起对抗 威利斯
+															和他的追随者。但是这场小规模冲突导致了飞船撞向了当地一家医院，并将其夷为了平地。之后 恶灵
+															便开始协助医院对病人的治疗以及医院的修复工作。<br><br><big><b>探路者之书</b></big><br>
+															当 <a href="/apex/Pathfinder" title="Pathfinder">探路者</a> 寻求有关他的创造者的答案时，恶灵
+															遇到了探路者。他们讨论了宇宙中的各个维度以及目前这个维度 恶灵 的到来。<br><br><big><b>传承抗原</b></big><br>
+															美杜莎病毒在奥林匹斯爆发期间，恶灵 确认这些伊卡洛斯舰队只是表面上不属于IMC。之后 恶灵 在某种大型蛛形纲动物中找到了治愈病毒的方法。
+															后来，在一家满是美杜莎病毒患者的医院里，恶灵 试图阻止激动的 <a href="/apex/Bangalore" title="Bangalore">班加罗尔</a> 离开医院。
+															两人之间爆发了一场争吵，班加罗尔 责怪 恶灵
+															找不到班加罗尔的哥哥——杰克逊。<br>
+															班加罗尔 解释了她的责怪 恶灵 的原因：班加罗尔 曾在2727年的某一天前往诸王峡谷的Singh实验室，也就在那一天，恶灵 与 虚空行者恶灵
+															相识并交换了维度。 班加罗尔把从线人那里获得的闪存盘插入电脑，发现了 杰克逊 录制的视频信息，这证明他还活着。
+															然而，视频刚播到一半，她便被闯入房间的 虚空行者 打断了。
+															听到这个消息后，得知了的缘由的恶灵感到欣喜若狂，她与班加罗尔达成了一项协议，两人互相帮助，找到了与他们过去那份缺失的联系。<br><br><big><b>第十一赛季</b></big><br>
+															在一次探险中，班加罗尔 向 恶灵 讲述了她如何获得数据刀的故事。恶灵
+															之后找到班加罗尔，声称在索雷斯城找到了曾经的那位联系人。<br><br><big><b>告别威廉姆斯</b></big><br>
+															一天，恶灵 带着一份信息来到了班加罗尔的家门口。她在索雷斯城的一处停尸房找到了 杰克逊
+															的狗牌，以及一份五年前被登记为无人认领的尸体记录，记录显示这具尸体与杰克逊的年龄、身高、体重甚至血型都高度匹配。 班加罗尔
+															想要去停尸房确认，但被告知在索雷斯城，如果尸体身份不明，停尸房就会在两周后掩埋尸体。
+															更不幸的是，关于埋葬地点的记录在三年前的一场大火中丢失了，心烦意乱的 班加罗尔 绝望地哭泣。<br><br>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- 皮肤 -->
+											<div class="container-fluid myfox" id="Wraith-skin">
+												<div>
+													<div class="row mt-3">
+														<h2 class="text-center text-light bg-info bg-gradient rounded-5">恶灵皮肤</h2>
+													</div>
+													<div class="row">
+														<div class="col">
+															<div class="image-container">
+																<ul class="list-group list-group-horizontal">
+																	<li class="list-group-item square col-4 s5"><img src="img/恶灵威望1.png"></li>
+																	<li class="list-group-item square col-4 s5"><img src="img/恶灵威望2.png"></li>
+																	<li class="list-group-item square col-4 s5"><img src="img/恶灵威望3.png"></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col">
+															<div class="image-container">
+																<ul class="list-group list-group-horizontal">
+																	<li class="list-group-item square col-3 s5"><img src="
+																		img/Quarantine_722_Wraith.png">
+																	</li>
+																	<li class="list-group-item square col-3 s5"><img src="
+																		img/Flashpoint_Wraith.png"></li>
+																	<li class="list-group-item square col-3 s5"><img src="
+																		img/Voidwalker_Wraith.png"></li>
+																	<li class="list-group-item square col-3 s5"><img src="
+																			img/Void_Prowler_Wraith.png">
+																</ul>
+															</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col">
+															<div class="image-container">
+																<ul class="list-group list-group-horizontal">
+																	<li class="list-group-item square col-3 s5"><img src="img/Neon_Spectre_Wraith.png">
+																	</li>
+																	<li class="list-group-item square col-3 s5"><img src="img/Rift_Stalker.png"></li>
+																	<li class="list-group-item square col-3 s5"><img src="img/Emerald_Enchantress_Wraith.png"></li>
+																	<li class="list-group-item square col-3 s5"><img src="img/Perfect_Soldier_Wraith.png">
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- 卡片 -->
+											<div class="container-fluid myfox">
+												<div class="row">
+													<div class="col-5" id="Wraith-line">
+														<div class="row mt-3">
+															<h2 class="text-center text-light bg-info bg-gradient rounded-5">恶灵经典台词
+															</h2>
+														</div>
+														<div class="container">
+															<div class="card bg-danger text-white">
+																<div class="card-body">只是朝正确的方向迈出了一步。</div>
+															</div>
+															<br>
+															<div class="card bg-success text-white">
+																<div class="card-body">我不害怕，永远不会。</div>
+															</div>
+															<br>
+															<div class="card bg-warning text-white">
+																<div class="card-body">每个决定都有后果。</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-7" id="Wraith-evaluate">
+														<div class="row mt-3">
+															<h2 class="text-center text-light bg-info bg-gradient rounded-5">对恶灵的评价
+															</h2>
+														</div>
+														<div class="col-12">
+															<div style="line-height:27px">
+																<p>恶灵被认为是一个非常有趣和有挑战性的角色。她的移动速度和逃脱能力使她适合进行快速突袭或巧妙的位置转换。</p>
+																<p>然而，使用恶灵需要一定的技巧和策略，因为她在战斗中的生存能力相对较低，需要依靠机动性来保持活力。当然，个人对于恶灵的评价也可能因玩家的游戏风格和喜好而有所不同。一些玩家可能特别喜欢恶灵的机动性和闪避能力，而其他玩家可能更喜欢其他角色的特点和能力。
+																</p>
+																<p>总的来说，恶灵作为《Apex
+																	Legends》中的角色之一，提供了一种独特而有趣的游戏体验，她的能力使得玩家能够展现出不同的战术和策略。</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- 定位 -->
+											<div class="row" style="position: fixed; top: 50%; left: 0; transform: translateY(-50%);">
+												<div class="col-4">
+													<div id="list-example" class="list-group" style="font-size: 12px;">
+														<a class="list-group-item list-group-item-action text-center s3" style="height: 70px;" href="#Wraith">顶部</a>
+														<a class="list-group-item list-group-item-action text-center s3" style="height: 70px;" href="#Wraith-imc">介绍</a>
+														<a class="list-group-item list-group-item-action text-center s3" style="height: 70px;" href="#Wraith-bwl">技能</a>
+														<a class="list-group-item list-group-item-action text-center s3" style="height: 70px;" href="#Wraith-story">故事</a>
+														<a class="list-group-item list-group-item-action text-center s3" style="height: 70px;" href="#Wraith-skin">皮肤</a>
+														<a class="list-group-item list-group-item-action text-center s3" style="height: 70px;" href="#Wraith-line">台词</a>
+														<a class="list-group-item list-group-item-action text-center s3" style="height: 70px;" href="#Wraith-evaluate">评价</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 陈奕钧的页面 -->
+				<div id="menu3" class="container-fluid tab-pane fade d1"><br>
+					<div id="电妹-demo" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#电妹-demo" data-bs-slide-to="0" class="active"></button>
+							<button type="button" data-bs-target="#电妹-demo" data-bs-slide-to="1"></button>
+							<button type="button" data-bs-target="#电妹-demo" data-bs-slide-to="2"></button>
+						</div>
+						<!-- 轮播图片 -->
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img decoding="async" src="img/电妹-lunbo1.jpg" class="d-block" style="width:100%">
+							</div>
+							<div class="carousel-item">
+								<img decoding="async" src="img/电妹-lunbo2.jpg" class="d-block" style="width:100%">
+							</div>
+							<div class="carousel-item">
+								<img decoding="async" src="img/电妹-lunbo3.JPG" class="d-block" style="width:100%">
+							</div>
+						</div>
+						<!-- 左右切换按钮 -->
+						<button class="carousel-control-prev" type="button" data-bs-target="#电妹-demo" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#电妹-demo" data-bs-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</button>
+					</div>
+					<!-- 侧边导航栏 -->
+					<div class="row" style="position: fixed; top: 50%; left: 0; transform: translateY(-50%);">
+						<div class="col-4">
+							<div id="list-example" class="list-group">
+								<a class="list-group-item list-group-item-action text-center s3" style="height: 70px; font-size: 12px;" href="#电妹-demo">轮播图</a>
+								<a class="list-group-item list-group-item-action text-center s3" style="height: 70px; font-size: 12px;" href="#电妹-introduce">介绍</a>
+								<a class="list-group-item list-group-item-action text-center s3" style="height: 70px; font-size: 12px;" href="#电妹-jineng">技能</a>
+								<a class="list-group-item list-group-item-action text-center s3" style="height: 70px; font-size: 12px;" href="#电妹-story">故事</a>
+								<a class="list-group-item list-group-item-action text-center s3" style="height: 70px; font-size: 12px;" href="#电妹-pifu">皮肤</a>
+								<a class="list-group-item list-group-item-action text-center s3" style="height: 70px; font-size: 12px;" href="#电妹-pingjia">评价</a>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- 传奇介绍 -->
+					<br />
+					<div class="container-fluid" style="width: 80%;margin-left: 10%;" id="电妹-introduce">
+						<div class="row">
+							<div class="col-md-4" style="background-color: black;color: aqua;text-align: center;height: 30px;">沃特森
+							</div>
+							<div class="col-md-8" style="background-color: black;color: aqua;text-align: center;height: 30px;">可公开档案
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<img src="img/沃特森.png" / style="height: 500px;width: auto;margin-left: 20%;">
+							</div>
+							<div class="col-md-8">
+								<h2>岿然不动的守护者</h2>
+								<hr />
+								<p>娜塔莉「沃特森」帕奎特是Apex 竞赛中的一个老面孔，不过大家认识她的原因却与大多数人不同。她是竞赛的主电子工程师之女，
+									她为了待在父亲身边熟读了他的笔记，也因此在小小年纪就找到了自己的目标。尽管她有时非常容易分心，也有时非常专注，电学却深深地迷住了她。
+									对她来说，电力的规律性和可预知的流动比世界上的其他东西还容易理解。她熟读这方面的所有书籍并成为了一名技术高超的工程师，
+									最后她被聘雇来打造Apex 竞赛的改造封锁圆圈。不幸的是，她的父亲在开幕当天去世了，只留下她孤伶伶的一个人。在她人生的最低潮，
+									一群参赛者邀请了她一起进入竞技场并向她保证这里永远都会是她的家。现在她在她协助打造的竞技场中和她的朋友们一起战斗、摧毁来袭弹药、补充防护罩、
+									打造栅栏并使用电塔来压制激烈的战斗。没有人比华森更了解这座竞技场－－所有低估她的人都会大吃一惊。
+								</p>
+								<br />
+								<p>
+									<b>真名：</b>娜塔莉‧帕奎特<br />
+									<b>性别：</b>女<br />
+									<b>年龄：</b>24<br />
+									<b>身高：</b>5英尺4英寸（163厘米）<br />
+									<b>体重：</b>未知<br />
+									<b>家园：</b>慰藉星<br />
+									<b>类型：</b>控制型<br />
+									<b>配音：</b>谢莹/Justine Huxley<br />
+								</p>
+							</div>
+						</div>
+						<!-- 技能 -->
+						<div class="row">
+							<div class="col-md-12" style="background-color: black;color: aqua;text-align: center;height: 30px;" id="电妹-jineng">沃特森技能详情</div>
+						</div>
+						<div class="row">
+							<div class="container mt-3">
+								<!-- 表格 -->
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<th colspan="3" class="text-center">边界防护</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td rowspan="3" class="ms-1" style="width: 100px;"><img src="img/边界防护.png" /></td>
+											<td class="ms-1 text-center" style="width: 100px;">技能类型</td>
+											<td class="ms-10">战术技能</td>
+										</tr>
+										<tr>
+											<td class="text-center">冷却时间</td>
+											<td>15秒</td>
+										</tr>
+										<tr>
+											<td class="text-center">技能简介</td>
+											<td>通过架设节点建立起通电围栏，围栏会造成伤害并减速敌人。</td>
+										</tr>
+										<!-- 设置按钮并点击按钮显示影藏的盒子 -->
+										<tr>
+											<th colspan="3">
+												<ul class="list-group list-group-horizontal">
+													<li class="list-group-item" style="width: 100%;">
+														<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#电妹-collapseCard1"
+														 aria-expanded="false" aria-controls="collapseCard">信息</button>
+														<div class="collapse" id="电妹-collapseCard1">
+															<div class="card card-body">
+																<ul>
+																	<li>此技能最多可充能四次，每15秒可充能一次。</li>
+																	<li>一次最多可以在地图上激活12个节点；你可以拾取未使用的节点以重新充能。
+																		<ul>
+																			<li>以最大数量部署新节点将销毁最旧的节点。</li>
+																		</ul>
+																	</li>
+																	<li>节点必须在30米以内才能在它们之间创建围栏。一个节点可以同时与最多2个其他节点连接。</li>
+																	<li>电网会造成伤害，减速敌人通过电网的速度，并在屏幕和地图上标记被破坏的电网的位置。每下的伤害为20，减速的持续时间约为3秒。
+																	</li>
+																</ul>
+															</div>
+														</div>
+														<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#电妹-collapseCard2"
+														 aria-expanded="false" aria-controls="collapseCard">提示</button>
+														<div class="collapse" id="电妹-collapseCard2">
+															<div class="card card-body">
+																<ul>
+																	<li>透过班加罗尔的烟雾看不到电网。</li>
+																	<li>密客的无人机EMP将摧毁范围内的每个节点。“执行重启！”</li>
+																</ul>
+															</div>
+														</div>
+														<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#电妹-collapseCard3"
+														 aria-expanded="false" aria-controls="collapseCard">建议</button>
+														<div class="collapse" id="电妹-collapseCard3">
+															<div class="card card-body">
+																<ul>
+																	<li>大多数时候，你的目标不是让敌人跑进你的围栏。这是为了吓唬他们避开特定的路线。</li>
+																	<li>不要只是在建筑物内部使用围栏来阻挡敌人；也可以在建筑物的外面放置一个闲置节点来电击堵门的敌人。</li>
+																	<li>在可破坏的门附近使用围栏时要小心。如果门碰到到围栏，它们会破裂，并且您将无法再使用它们作为掩护。</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</th>
+										</tr>
+									</tbody>
+								</table>
+								<!-- 表格 -->
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<th colspan="3" class="text-center">智慧火花</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td rowspan="3" class="ms-1" style="width: 100px;"><img src="img/智慧火花.png" /></td>
+											<td class="ms-1 text-center" style="width: 100px;">技能类型</td>
+											<td class="ms-10">被动技能</td>
+										</tr>
+										<tr>
+											<td class="text-center">冷却时间</td>
+											<td>无</td>
+										</tr>
+										<tr>
+											<td class="text-center">技能简介</td>
+											<td>绝招加速剂会使沃特森的绝招充能完毕，且她可以携带更多绝招加速剂。沃特森将随时间慢慢恢复护盾。</td>
+										</tr>
+										<!-- 设置按钮并点击按钮显示影藏的盒子 -->
+										<tr>
+											<th colspan="3">
+												<ul class="list-group list-group-horizontal">
+													<li class="list-group-item" style="width: 100%;">
+														<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#电妹-collapseCard4"
+														 aria-expanded="false" aria-controls="collapseCard">信息</button>
+														<div class="collapse" id="电妹-collapseCard4">
+															<div class="card card-body">
+																<ul>
+																	<li>沃特森每个背包槽最多可存储2个绝招加速剂。脱战6秒后可以缓慢回复护盾值</li>
+																</ul>
+															</div>
+														</div>
+														<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#电妹-collapseCard5"
+														 aria-expanded="false" aria-controls="collapseCard">提示</button>
+														<div class="collapse" id="电妹-collapseCard5">
+															<div class="card card-body">
+																<ul>
+																	<li>在使用罗芭的黑市精品店时，沃特森将拾取2个绝招加速剂，而不是一个。</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</th>
+										</tr>
+									</tbody>
+								</table>
+								<!-- 表格 -->
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<th colspan="3" class="text-center">拦截者塔</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td rowspan="3" class="ms-1" style="width: 100px;"><img src="img/拦截者.png" /></td>
+											<td class="ms-1 text-center" style="width: 100px;">技能类型</td>
+											<td class="ms-10">终极技能</td>
+										</tr>
+										<tr>
+											<td class="text-center">冷却时间</td>
+											<td>180秒</td>
+										</tr>
+										<tr>
+											<td class="text-center">技能简介</td>
+											<td>部署一个通电桥塔，摧毁来袭的火力并修复破损的护盾。站在塔附近可以加快沃特森战术技能的再充能速率。（最高：1）</td>
+										</tr>
+										<!-- 设置按钮并点击按钮显示影藏的盒子 -->
+										<tr>
+											<th colspan="3">
+												<ul class="list-group list-group-horizontal">
+													<li class="list-group-item" style="width: 100%;">
+														<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#电妹-collapseCard6"
+														 aria-expanded="false" aria-controls="collapseCard">信息</button>
+														<div class="collapse" id="电妹-collapseCard6">
+															<div class="card card-body">
+																<ul>
+																	<li>如果拦截塔放置在其半径范围内，也会摧毁向外发射的投掷物。</li>
+																	<li>该拦截塔可以恢复250点护盾值，在基地周围或通过悬停在放置的塔的标记上可以看到倒计时。</li>
+																</ul>
+															</div>
+														</div>
+														<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#电妹-collapseCard7"
+														 aria-expanded="false" aria-controls="collapseCard">提示</button>
+														<div class="collapse" id="电妹-collapseCard7">
+															<div class="card card-body">
+																<ul>
+																	<li>来袭投掷物包括：
+																		<ul>
+																			<li>投掷物，如碎片手雷、铝热剂和电弧星。</li>
+																			<li>战术技能</li>
+																			<li>终极技能</li>
+																		</ul>
+																	</li>
+																	<li>直布罗陀的穹顶护盾将像任何墙壁或掩体一样阻挡拦截塔的视线。</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</th>
+										</tr>
+									</tbody>
+								</table>
+								<!-- 表格 -->
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<th colspan="3" class="text-center">控制</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td rowspan="3" class="ms-1" style="width: 100px;"><img src="img/控制.png" /></td>
+											<td class="ms-1 text-center" style="width: 100px;">技能类型</td>
+											<td class="ms-10">定位</td>
+										</tr>
+										<tr>
+											<td class="text-center">冷却时间</td>
+											<td>无</td>
+										</tr>
+										<tr>
+											<td class="text-center">技能简介</td>
+											<td>扫描安全区控制器会显示下一个安全区的位置。</td>
+										</tr>
+										<!-- 设置按钮并点击按钮显示影藏的盒子 -->
+										<tr>
+											<th colspan="3">
+												<ul class="list-group list-group-horizontal">
+													<li class="list-group-item" style="width: 100%;">
+														<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#电妹-collapseCard8"
+														 aria-expanded="false" aria-controls="collapseCard">信息</button>
+														<div class="collapse" id="电妹-collapseCard8">
+															<div class="card card-body">
+																<ul>
+																	<li>扫描安全区控制器会在地图上显示下一个安全区的位置。</li>
+																</ul>
+															</div>
+														</div>
+														<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#电妹-collapseCard9"
+														 aria-expanded="false" aria-controls="collapseCard">提示</button>
+														<div class="collapse" id="电妹-collapseCard9">
+															<div class="card card-body">
+																<ul>
+																	<li>利用安全区控制器的信息和自己的技能守下地图上最好的位置吧</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!-- 故事 -->
+						<div class="row">
+							<div class="col-md-12" style="background-color: black;color: aqua;text-align: center;height: 30px;" id="电妹-story">沃特森的故事</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p>
+									沃特森的真名是威尔贝尔·维恩，她是一位天才的科学家和工程师。她的父亲是一名在Apex游戏世界中广受赞誉的科学家，他对能源技术做出了巨大贡献。
+									然而，沃特森的父亲不幸去世后，她决定继承父亲的事业并继续他的研究。她投身于能源技术和电力工程的领域，追求创新和发明。
+									在她的研究过程中，沃特森发现了一种叫做Tesla能量的新型能源技术。这种能源技术可以产生高频电流并转化为强力的电磁力场。
+									这种力场能够生成电网和电子屏障，形成防御结构，并且还能够在一定范围内提供电力供应。
+									沃特森将这项发现带到了Apex游戏世界，她成为了一名传奇角色，并且以她的父亲的姓氏，维恩，命名为“沃特森”。
+									作为一名传奇角色，沃特森的技能和能力使她成为队伍中的支援和防守专家。她可以放置叫做“電蜘蛛”（Interceptor Pylon）的装置，
+									这是一种能够抵挡敌人子弹和炸弹的电力屏障。同时，这个装置还可以为队伍中的队友提供额外的能量和恢复护盾的效果。
+									沃特森的能力不仅仅体现在她的科技领域，她还展现出了出色的领导才能和战术头脑。她是一个善于策划和规划的角色，常常能够在紧急情况下做出明智的决策。
+									尽管沃特森是一名技术专家和研究者，但她的本性温和和善良。她对保护队友和确保队伍安全的责任感始终如一，她始终以乐观和积极的态度面对挑战和困难。
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12" style="background-color: black;color: aqua;text-align: center;height: 30px;" id="电妹-pifu">皮肤展示</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<div class="image-container s5">
+									<ul class="list-group list-group-horizontal">
+										<li class="list-group-item square col-3"><img src="img/outlands.png"></li>
+										<li class="list-group-item square col-3"><img src="img/rocket.png"></li>
+										<li class="list-group-item square col-3"><img src="img/ruby.png"></li>
+										<li class="list-group-item square col-3"><img src="img/shocking.jpg"></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<div class="image-container s5">
+									<ul class="list-group list-group-horizontal">
+										<li class="list-group-item square col-3"><img src="img/silver.png" /></li>
+										<li class="list-group-item square col-3"><img src="img/vaporwave.png" /></li>
+										<li class="list-group-item square col-3"><img src="img/strange.png" /></li>
+										<li class="list-group-item square col-3"><img src="img/wried.png" /></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="row" id="电妹-pingjia">
+							<div class="col-md-6" style="background-color: black;color: aqua;text-align: center;height: 30px;">经典台词
+							</div>
+							<div class="col-md-6" style="background-color: black;color: aqua;text-align: center;height: 30px;">锐评沃特森
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="container">
+									<div class="card bg-primary text-white">
+										<div class="card-body">爸爸会为我骄傲的。</div>
+									</div>
+									<br>
+									<div class="card bg-success text-white">
+										<div class="card-body">我正处于竞技“电”峰。</div>
+									</div>
+									<br>
+									<div class="card bg-info text-white">
+										<div class="card-body">我们所向披靡。</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div style="line-height:27px">
+									<p>沃特森的技能非常适合与其他队友的技能和能力搭配使用。她的防守能力可以为队友提供更好的生存环境，同时她的装置也可以保护其他队友放置的防御性装置</p>
+									<p>沃特森的技能需要在合适的位置放置，她需要有良好的战术眼光和地图意识。她的装置可以被敌人摧毁，因此放置的位置需要明智选择，能够最大化地保护队伍和电力资源。</p>
+									<p>沃特森作为一个角色在游戏中不仅有强大的技能，同时也有着深入的背景故事和独特的个性。她作为一个聪明而善良的科学家和研究者，给人留下了深刻的印象。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 周亚军的页面 -->
+				<div id="menu4" class="container-fluid tab-pane fade d1"><br>
 					<div id="猎犬-lunbo" class="carousel slide" data-bs-ride="carousel">
 					
 						<!-- 指示符 -->
