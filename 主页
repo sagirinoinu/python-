@@ -32,23 +32,26 @@
 				justify-content: center;
 			}
 			/* 鼠标悬停时缩放和置于最上层 */
-			.image-container img {
-				width: 100%;
-				height: auto;
+			.s5 img {
 				transition: all 0.3s ease-out;
-				position: relative;
-				display: block;
 				z-index: 1;
 				border-radius: 50%;
 			}
-			.image-container img:hover {
+			.s5 img:hover {
 				transform: scale(1.5) ;
 				z-index: 10;
 			}
-			
+			.image-container img{
+				width: 100%;
+				height: auto;
+				position: relative;
+				display: block;
+			}
 			.bg-red {
 			  background-color: red;
-			  border-radius: 50%;
+			}
+			.d1{
+				background-color: white;
 			}
 		</style>
 	</head>
@@ -60,19 +63,19 @@
 					<a class="nav-link active" data-bs-toggle="tab" href="#home">主页</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link " data-bs-toggle="tab" href="#menu">孔德礼的页面</a>
+					<a class="nav-link " data-bs-toggle="tab" href="#menu">地平线</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" data-bs-toggle="tab" href="#menu1">赵晨云的页面</a>
+					<a class="nav-link" data-bs-toggle="tab" href="#menu1">探路者</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" data-bs-toggle="tab" href="#menu2">鲍俊辰的页面</a>
+					<a class="nav-link" data-bs-toggle="tab" href="#menu2">恶灵</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" data-bs-toggle="tab" href="#menu3">陈奕钧的页面</a>
+					<a class="nav-link" data-bs-toggle="tab" href="#menu3">沃特森</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" data-bs-toggle="tab" href="#menu4">周亚军的页面</a>
+					<a class="nav-link" data-bs-toggle="tab" href="#menu4">寻血猎犬</a>
 				</li>
 			</ul>
 			<!-- 在左边显示头像 -->
@@ -90,9 +93,9 @@
 					</li>
 				</ul>
 			</div>
-			<div class="tab-content " style="width: 80%; margin-left: 10%; background-color: white;">
+			<div class="tab-content " style="width: 80%; margin-left: 10%;">
 				<!-- 孔德礼的页面 -->
-				<div id="menu" class="container-fluid tab-pane fade"><br>
+				<div id="menu" class="container-fluid tab-pane fade d1"><br>
 					<div id="demo" class="carousel slide" data-bs-ride="carousel">
 
 						<!-- 指示符 -->
@@ -130,7 +133,7 @@
 								<div class="row mt-3 ms-12">
 									<div class="col-4">
 										<div class="row mt-3">
-											<h2 class="text-center text-light bg-red">地平线</h2>
+											<h2 class="text-center text-light bg-red rounded-5">地平线</h2>
 										</div>
 										<div class="container mt-3 text-center">
 											<img src="img/地平线.png" />
@@ -138,7 +141,7 @@
 									</div>
 									<div class="col-8">
 										<div class="row mt-3">
-											<h2 class="text-center text-light bg-red">地平线可公开档案</h2>
+											<h2 class="text-center text-light bg-red rounded-5">地平线可公开档案</h2>
 										</div>
 										<div style="line-height:27px">
 											<h2><span></span><span class="mw-headline">引力操控者</span></h2>
@@ -168,7 +171,7 @@
 					<div class="container-fluid myfox" id="bwl">
 						<div>
 							<div class="row mt-3">
-								<h2 class="text-center text-light bg-red">地平线技能介绍</h2>
+								<h2 class="text-center text-light bg-red rounded-5">地平线技能介绍</h2>
 							</div>
 							<div class="row">
 								<div class="container mt-3">
@@ -423,7 +426,7 @@
 							<div class="col">
 								<div class="col-12">
 									<div class="row mt-3">
-										<h2 class="text-center text-light bg-red">地平线的故事</h2>
+										<h2 class="text-center text-light bg-red rounded-5">地平线的故事</h2>
 									</div>
 									<div style="line-height:27px">
 										<h2><span></span><span class="mw-headline">注：萨默斯为地平线</span></h2>
@@ -441,11 +444,11 @@
 					<div class="container-fluid myfox" id="sagiri">
 						<div>
 							<div class="row mt-3">
-								<h2 class="text-center text-light bg-red">地平线皮肤展示</h2>
+								<h2 class="text-center text-light bg-red rounded-5">地平线皮肤展示</h2>
 							</div>
 							<div class="row">
 								<div class="col">
-									<div class="image-container">
+									<div class="image-container s5">
 										<ul class="list-group list-group-horizontal">
 											<li class="list-group-item square col-2"><img src="img/solaris.png"></li>
 											<li class="list-group-item square col-2"><img src="img/Terra%20nova.png"></li>
@@ -459,7 +462,7 @@
 							</div>
 							<div class="row">
 								<div class="col">
-									<div class="image-container">
+									<div class="image-container s5">
 										<ul class="list-group list-group-horizontal">
 											<li class="list-group-item square col-2"><img src="img/supermassive.png"></li>
 											<li class="list-group-item square col-2"><img src="img/biotic.png"></li>
@@ -473,7 +476,7 @@
 							</div>
 							<div class="row">
 								<div class="col">
-									<div class="image-container">
+									<div class="image-container s5">
 										<ul class="list-group list-group-horizontal">
 											<li class="list-group-item square col-2"><img src="img/生态物理学.png"></li>
 										</ul>
@@ -487,7 +490,7 @@
 						<div class="row">
 							<div class="col-5" id="kap">
 								<div class="row mt-3">
-									<h2 class="text-center text-light bg-red">地平线经典台词</h2>
+									<h2 class="text-center text-light bg-red rounded-5">地平线经典台词</h2>
 								</div>
 								<div class="container">
 									<div class="card bg-primary text-white">
@@ -505,7 +508,7 @@
 							</div>
 							<div class="col-7" id="评价">
 								<div class="row mt-3">
-									<h2 class="text-center text-light bg-red">对地平线的评价</h2>
+									<h2 class="text-center text-light bg-red rounded-5">对地平线的评价</h2>
 								</div>
 								<div class="col-12">
 									<div style="line-height:27px">
@@ -532,29 +535,471 @@
 							</div>
 						</div>
 					</div>
+					<br />
+					<br />
+					<br />
+					<br />
 				</div>
-				<!-- 赵晨云的页面 -->
-				<div id="menu1" class="container-fluid tab-pane fade"><br>
-
-				</div>
-				<!-- 鲍俊辰的页面 -->
-				<div id="menu2" class="container-fluid tab-pane fade"><br>
-
-
-				</div>
-				<!-- 陈奕钧的页面 -->
-				<div id="menu3" class="container-fluid tab-pane fade"><br>
-
-
-				</div>
-				<!-- 周亚军的页面 -->
-				<div id="menu4" class="container-fluid tab-pane fade"><br>
-
-
+					<div id="猎犬-lunbo" class="carousel slide" data-bs-ride="carousel">
+					
+						<!-- 指示符 -->
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#猎犬-lunbo" data-bs-slide-to="0" class="active"></button>
+							<button type="button" data-bs-target="#猎犬-lunbo" data-bs-slide-to="1"></button>
+							<button type="button" data-bs-target="#猎犬-lunbo" data-bs-slide-to="2"></button>
+						</div>
+					
+						<!-- 轮播图片 -->
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img decoding="async" src="img/寻血猎犬-lunbo1.jpg" class="d-block" style="width:80%;margin-left: 10%;">
+							</div>
+							<div class="carousel-item">
+								<img decoding="async" src="img/寻血猎犬-lunbo2.jpg" class="d-block" style="width:80%;margin-left: 10%;">
+							</div>
+							<div class="carousel-item">
+								<img decoding="async" src="img/寻血猎犬-lunbo3.jpg" class="d-block" style="width:80%;margin-left: 10%;">
+							</div>
+						</div>
+					
+						<!-- 左右切换按钮 -->
+						<button class="carousel-control-prev" type="button" data-bs-target="#猎犬-lunbo" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#猎犬-lunbo" data-bs-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</button>
+					</div>
+					
+					<!-- 侧边导航栏 -->
+					<div class="row" style="position: fixed; top: 50%; left: 0; transform: translateY(-50%);">
+						<div class="col-4">
+							<div id="电妹-list-example" class="list-group">
+								<a class="list-group-item list-group-item-action text-center s3" style="height: 70px;"
+									href="#猎犬-top">顶部</a>
+								<a class="list-group-item list-group-item-action text-center s3" style="height: 70px;"
+									href="#猎犬-lunbo">轮播图</a>
+								<a class="list-group-item list-group-item-action text-center s3" style="height: 70px;"
+									href="#猎犬-introduce">介绍</a>
+								<a class="list-group-item list-group-item-action text-center s3" style="height: 70px;"
+									href="#猎犬-jineng">技能</a>
+								<a class="list-group-item list-group-item-action text-center s3" style="height: 70px;"
+									href="#猎犬-story">故事</a>
+								<a class="list-group-item list-group-item-action text-center s3" style="height: 70px;"
+									href="#猎犬-pifu">皮肤</a>
+								<a class="list-group-item list-group-item-action text-center s3" style="height: 70px;"
+									href="#猎犬-pingjia">评价</a>
+							</div>
+						</div>
+					</div>
+					
+					
+					<!-- 传奇介绍 -->
+					<br />
+					<div class="container-fluid" style="width: 80%;margin-left: 10%;" id="猎犬-introduce">
+						<div class="row">
+							<div class="col-md-4" style="background-color: red;color: gold;text-align: center;height: 30px;">寻血猎犬
+							</div>
+							<div class="col-md-8" style="background-color: red;color: gold;text-align: center;height: 30px;">可公开档案
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<img src="img/345px-寻血猎犬图鉴.png" / style="height: 500px;width: auto;margin-left: 20%;">
+							</div>
+							<div class="col-md-8">
+								<h2>科技追踪者</h2>
+								<hr />
+								<p>寻血猎犬是边疆最厉害的猎人之一。寻血猎犬的父母是两名驻守于塔罗斯新黎明工业工厂的工程师，
+								在一场容毁意外摧毁了这座设施并令他父母双亡后，寻血猎犬的叔叔亚瑟收留了他。亚瑟教了他昔日之道，一种崇尚自然并拒绝现代科技的信仰。
+								然而，寻血猎犬不断受到科技的奇迹所吸引，最后他结合了新旧手法来击杀一只残害村民的巨无霸，同时永远改变了他们的生活方式。
+								寻血猎犬的追踪能力能够大大地协助任何小队，他能帮助队伍找到隐藏的对手并追踪敌人的动向。寻血猎犬呼唤着地球中古老的北欧神明来指引大家，
+								他相信命运已经决定并且将会带领大家走向死亡。不过这个知识伴随着力量，因为在他死前，寻血猎犬知道自己无人能挡。
+								（此为外域故事公开后更新的人物情报）
+								</p>
+								<br />
+								<p>
+									<b>真名：</b>未知<br />
+									<b>性别：</b>非二元性别<br />
+									<b>年龄：</b>40<br />
+									<b>身高：</b>未知<br />
+									<b>体重：</b>未知<br />
+									<b>家园：</b>塔罗斯<br />
+									<b>类型：</b>侦察型<br />
+									<b>配音：</b>姜玉玲/Allegra Clark<br />
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12" style="background-color: red;color: gold;text-align: center;height: 30px;"
+								id="猎犬-jineng">寻血猎犬技能详情</div>
+						</div>
+						<div class="row">
+							<div class="container mt-3">
+								<!-- 表格 -->
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<th colspan="3" class="text-center">上帝之眼</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td rowspan="3" class="ms-1" style="width: 100px;"><img src="img/上帝之眼.png" /></td>
+											<td class="ms-1 text-center" style="width: 100px;">技能类型</td>
+											<td class="ms-10">战术技能</td>
+										</tr>
+										<tr>
+											<td class="text-center">冷却时间</td>
+											<td>25秒</td>
+										</tr>
+										<tr>
+											<td class="text-center">技能简介</td>
+											<td>在短时间内为你显示面前所有建筑物中的敌人、陷阱和线索。</td>
+										</tr>
+										<!-- 设置按钮并点击按钮显示影藏的盒子 -->
+										<tr>
+											<th colspan="3">
+												<ul class="list-group list-group-horizontal">
+													<li class="list-group-item" style="width: 100%;">
+														<button class="btn btn-link" type="button" data-bs-toggle="collapse"
+															data-bs-target="#猎犬-collapseCard1" aria-expanded="false"
+															aria-controls="collapseCard">信息</button>
+														<div class="collapse" id="猎犬-collapseCard1">
+															<div class="card card-body">
+																<ul>
+																	<li>此技能最多可充能四次，每15秒可充能一次。</li>
+																	<li>一次最多可以在地图上激活12个节点；你可以拾取未使用的节点以重新充能。
+																		<ul>
+																			<li>以最大数量部署新节点将销毁最旧的节点。</li>
+																		</ul>
+																	</li>
+																	<li>节点必须在30米以内才能在它们之间创建围栏。一个节点可以同时与最多2个其他节点连接。</li>
+																	<li>电网会造成伤害，减速敌人通过电网的速度，并在屏幕和地图上标记被破坏的电网的位置。每下的伤害为20，减速的持续时间约为3秒。
+																	</li>
+																</ul>
+															</div>
+														</div>
+														<button class="btn btn-link" type="button" data-bs-toggle="collapse"
+															data-bs-target="#猎犬-collapseCard2" aria-expanded="false"
+															aria-controls="collapseCard">提示</button>
+														<div class="collapse" id="猎犬-collapseCard2">
+															<div class="card card-body">
+																<ul>
+																	<li>透过班加罗尔的烟雾看不到电网。</li>
+																	<li>密客的无人机EMP将摧毁范围内的每个节点。“执行重启！”</li>
+																</ul>
+															</div>
+														</div>
+														<button class="btn btn-link" type="button" data-bs-toggle="collapse"
+															data-bs-target="#猎犬-collapseCard3" aria-expanded="false"
+															aria-controls="collapseCard">建议</button>
+														<div class="collapse" id="猎犬-collapseCard3">
+															<div class="card card-body">
+																<ul>
+																	<li>大多数时候，你的目标不是让敌人跑进你的围栏。这是为了吓唬他们避开特定的路线。</li>
+																	<li>不要只是在建筑物内部使用围栏来阻挡敌人；也可以在建筑物的外面放置一个闲置节点来电击堵门的敌人。</li>
+																	<li>在可破坏的门附近使用围栏时要小心。如果门碰到到围栏，它们会破裂，并且您将无法再使用它们作为掩护。</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</th>
+										</tr>
+									</tbody>
+								</table>
+								<!-- 表格 -->
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<th colspan="3" class="text-center">追踪器</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td rowspan="3" class="ms-1" style="width: 100px;"><img src="img/追踪器.png" /></td>
+											<td class="ms-1 text-center" style="width: 100px;">技能类型</td>
+											<td class="ms-10">被动技能</td>
+										</tr>
+										<tr>
+											<td class="text-center">冷却时间</td>
+											<td>无</td>
+										</tr>
+										<tr>
+											<td class="text-center">技能简介</td>
+											<td>敌人给你留下了线索。白渡鸦可能会现身，引导你去战斗，为你的技能充能。</td>
+										</tr>
+										<!-- 设置按钮并点击按钮显示影藏的盒子 -->
+										<tr>
+											<th colspan="3">
+												<ul class="list-group list-group-horizontal">
+													<li class="list-group-item" style="width: 100%;">
+														<button class="btn btn-link" type="button" data-bs-toggle="collapse"
+															data-bs-target="#猎犬-collapseCard4" aria-expanded="false"
+															aria-controls="collapseCard">信息</button>
+														<div class="collapse" id="猎犬-collapseCard4">
+															<div class="card card-body">
+																<ul>
+																	<li>沃特森每个背包槽最多可存储2个绝招加速剂。脱战6秒后可以缓慢回复护盾值</li>
+																</ul>
+															</div>
+														</div>
+														<button class="btn btn-link" type="button" data-bs-toggle="collapse"
+															data-bs-target="#猎犬-collapseCard5" aria-expanded="false"
+															aria-controls="collapseCard">提示</button>
+														<div class="collapse" id="猎犬-collapseCard5">
+															<div class="card card-body">
+																<ul>
+																	<li>在使用罗芭的黑市精品店时，沃特森将拾取2个绝招加速剂，而不是一个。</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</th>
+										</tr>
+									</tbody>
+								</table>
+								<!-- 表格 -->
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<th colspan="3" class="text-center">狂野猎人</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td rowspan="3" class="ms-1" style="width: 100px;"><img src="img/狂野猎人.png" /></td>
+											<td class="ms-1 text-center" style="width: 100px;">技能类型</td>
+											<td class="ms-10">终极技能</td>
+										</tr>
+										<tr>
+											<td class="text-center">冷却时间</td>
+											<td>180秒</td>
+										</tr>
+										<tr>
+											<td class="text-center">技能简介</td>
+											<td>变成为终极猎人。使白渡鸦的感官更加敏锐，能够察觉很久以前的踪迹，并提升移动速度。击倒敌人可延长持续时间。</td>
+										</tr>
+										<!-- 设置按钮并点击按钮显示影藏的盒子 -->
+										<tr>
+											<th colspan="3">
+												<ul class="list-group list-group-horizontal">
+													<li class="list-group-item" style="width: 100%;">
+														<button class="btn btn-link" type="button" data-bs-toggle="collapse"
+															data-bs-target="#猎犬-collapseCard6" aria-expanded="false"
+															aria-controls="collapseCard">信息</button>
+														<div class="collapse" id="猎犬-collapseCard6">
+															<div class="card card-body">
+																<ul>
+																	<li>如果拦截塔放置在其半径范围内，也会摧毁向外发射的投掷物。</li>
+																	<li>该拦截塔可以恢复250点护盾值，在基地周围或通过悬停在放置的塔的标记上可以看到倒计时。</li>
+																</ul>
+															</div>
+														</div>
+														<button class="btn btn-link" type="button" data-bs-toggle="collapse"
+															data-bs-target="#猎犬-collapseCard7" aria-expanded="false"
+															aria-controls="collapseCard">提示</button>
+														<div class="collapse" id="猎犬-collapseCard7">
+															<div class="card card-body">
+																<ul>
+																	<li>来袭投掷物包括：
+																		<ul>
+																			<li>投掷物，如碎片手雷、铝热剂和电弧星。</li>
+																			<li>战术技能</li>
+																			<li>终极技能</li>
+																		</ul>
+																	</li>
+																	<li>直布罗陀的穹顶护盾将像任何墙壁或掩体一样阻挡拦截塔的视线。</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</th>
+										</tr>
+									</tbody>
+								</table>
+								<!-- 表格 -->
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<th colspan="3" class="text-center">侦察</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td rowspan="3" class="ms-1" style="width: 100px;"><img src="img/侦察.png" /></td>
+											<td class="ms-1 text-center" style="width: 100px;">技能类型</td>
+											<td class="ms-10">定位</td>
+										</tr>
+										<tr>
+											<td class="text-center">冷却时间</td>
+											<td>无</td>
+										</tr>
+										<tr>
+											<td class="text-center">技能简介</td>
+											<td>敌方情报与追踪</td>
+										</tr>
+										<!-- 设置按钮并点击按钮显示影藏的盒子 -->
+										<tr>
+											<th colspan="3">
+												<ul class="list-group list-group-horizontal">
+													<li class="list-group-item" style="width: 100%;">
+														<button class="btn btn-link" type="button" data-bs-toggle="collapse"
+															data-bs-target="#猎犬-collapseCard8" aria-expanded="false"
+															aria-controls="collapseCard">信息</button>
+														<div class="collapse" id="猎犬-collapseCard8">
+															<div class="card card-body">
+																<ul>
+																	<li>扫描安全区控制器会在地图上显示下一个安全区的位置。</li>
+																</ul>
+															</div>
+														</div>
+														<button class="btn btn-link" type="button" data-bs-toggle="collapse"
+															data-bs-target="#猎犬-collapseCard9" aria-expanded="false"
+															aria-controls="collapseCard">提示</button>
+														<div class="collapse" id="猎犬-collapseCard9">
+															<div class="card card-body">
+																<ul>
+																	<li>利用安全区控制器的信息和自己的技能守下地图上最好的位置吧</li>
+																</ul>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12" style="background-color: red;color: gold;text-align: center;height: 30px;"
+								id="猎犬-story">寻血猎犬的故事</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p>
+									被称为 寻血猎犬 的猎人出生在塔罗斯，是约翰和布里吉达爱情的结晶，他们作为工程师在新黎明小镇一个用于处理Branthium的冷却工厂工作。 2703 年，一家人搬到了世界边缘附近的小镇。机械工程师 布里吉达 曾与 伊芙琳·威特 （幻象的母亲）一起工作。 ta的叔叔 阿特尔 也住在塔罗斯，但他加入了一个拒绝科技的部落。
+									
+									寻血猎犬 很少有与父母共度时光的记忆，尽管ta确实记得从 布里吉达 那学习如何修理坏掉的玩具。在ta小的时候，一场灾难性的雪崩将他们的家和世界边缘小镇的大部分地区埋在冰雪中。年幼的 寻血猎犬 亲眼看着 约翰 被雪崩掩埋。
+									
+									在ta的父母去世后，寻血猎犬被 阿特尔 收养到他的部落中。这个新组织拒绝任何比电灯泡更先进的技术。阿特尔 以 “昔日之道” 训练 寻血猎犬，这是似乎是一种改编自北欧神话的信仰体系。
+									
+									十年后，寻血猎犬 为了完全加入部落而进行最终的审判。 身上只装备着一把小斧头和ta的“昔日之道” 去猎杀一只猎兽。待ta出发时却发现ta的猎物已经被一只更强大的野兽杀死了，而这只野兽似乎住在一条古老的工业隧道里。 在隧道里，寻血猎犬 找到了一把充能步枪，在把玩这把新奇玩意时惊动了住在里面的野兽歌利亚。 在恐慌中，ta对着野兽扣下了扳机，切断了野兽歌利亚的一个角，似乎杀死了这个生物。 寻血猎犬 欣喜若狂，直到ta注意到了 阿特尔 的渡鸦。而后者则飞回部落向 阿特尔 报告了刚刚所发生的一切。
+									
+									寻血猎犬 回到部落，将充能步枪埋在了村外，试图将其隐藏起来。 之后，ta将野兽歌利亚的角作为献给众神之父的贡品展示给 阿特尔。 了解事实且愤怒的 阿特尔 拒绝了这个贡品，并告诉 寻血猎犬 因为ta选择了扣下扳机的快速杀戮而背叛了传统，所以决定流放 寻血猎犬。
+									
+									当 寻血猎犬 悲伤地准备离开时，并没有死去的野兽歌利亚来到村庄寻求报复。 村民们的攻击对野兽无济于事，而 阿特尔 则受到了致命伤。 寻血猎犬 想要帮忙，在挖出充能步枪扣下扳机时被野兽歌利亚撞飞，充能步枪被摔成了碎片。最后ta将充能步枪的能量核心扔向野兽歌利亚，爆炸产生的伤害迫使野兽离开了村庄 。
+									
+									阿特尔 在弥留之际表示，寻血猎犬通过了他的考验，ta战术获得了胜利，而不是单纯的依赖技术。 寻血猎犬捡起他的斧头，回到野兽歌利亚的巢穴准备为ta的叔叔报仇。 复仇的过程并不顺利，寻血猎犬最终被逼到了一个角落里，在此紧要关头，ta切开了一条冷却液管，冻结了野兽歌利亚，但ta也因此遭受了严重的肺部损伤。 ta随手拿起附近的呼吸面罩，顺利地将冰冻的野兽歌利亚斩首。
+									
+									寻血猎犬回到村里后为 阿特尔 和其他在野兽袭击中丧生的村民们举行了维京葬礼。 一只渡鸦也加入了他们的行列，为了纪念他们的叔叔，寻血猎犬将这只渡鸦称为“阿特尔”。
+									
+									遇见布恩
+									在那场袭击后的三年里，寻血猎犬 成为了部落的领导者。他们开始逐渐接受现代技术，并开始使用发电机和电力来加入“昔日之道“和”崭新之道“
+									
+									一天，一位名叫 布恩 的人到访了这个村庄，他是一位以擅长追踪稀有生物而闻名的猎人。布恩 最初只是要求在部落森林中狩猎的许可，但 寻血猎犬 最终说服了 布恩 让ta加入 布恩 的狩猎。起初 布恩 并不信任 寻血猎犬，但两人最终变得亲密起来，并成为了恋人。
+									
+									最终，布恩 向寻血猎犬坦白了他真正的猎物——一种难以捉摸的野兽，被称为óséður（冰岛语：无形）。这种生物难以察觉，几乎不会留下任何痕迹。寻血猎犬建议他们尝试通过其尾迹留下的热量特征来追踪它。两人取得了一些零件以开发一种可以以这种方式进行跟踪的工具，并将其命名为Tarkni声纳。 布恩 将这个工具交给了 寻血猎犬，因为它是他们知识的产物。
+									
+									某天两人发现 óséður 在它的巢穴里冬眠。 寻血猎犬 最初很伤心，因为这意味着他们必须等到春天才能进行光荣的杀戮。然而，布恩 透露了他的真实意图——试图将其捕获并将其卖给慰藉星的雷霆堡。两人为此产生了争吵，寻血猎犬 担心 布恩 会破坏狩猎的神圣性。然后两人不欢而散，布恩 在第二天日出前离开了。
+									
+									之后，寻血猎犬 向一名商人施压，要求他们将ta带到 布恩 去过的地方。商人同意了，这是 寻血猎犬 生平第一次离开了塔罗斯。寻血猎犬 跟随 布恩 来到雷霆堡，他正在那里炫耀着这只野兽。然而，它从笼子里逃了出来并残忍地杀死了 布恩，随后跳入人群中大肆进行破坏。身心饱受摧残的 寻血猎犬 制服了这个生物。
+									
+									寻血猎犬 认为 布恩 的死缺乏荣誉，为此ta决定为他收集荣誉，以便 布恩 可以进入英灵殿。ta进入 Apex竞赛 就是为了追求这一目标，且成为最有才华的竞争对手之一。寻血猎犬 继续为 布恩 点燃火焰，直到二十年后的今天，寻血猎犬 在诗歌中表达了ta的悲伤。
+									
+									破碎幽灵
+									在 萝芭 加入Apex竞赛后，她请求其他传奇帮忙在暗影坠落维度的另一个国王峡谷寻找神器碎片。
+									
+									后来，沃特森在暗影坠落维度中受伤了。当她从伤病中恢复过来时，亡灵 开始骚扰并威胁其他传奇。 寻血猎犬、直布罗陀和班加罗尔突然从次元返回以抵挡他们的袭击者。最终，亡灵 以 密客 的无人机作为载体回到这个维度，并向传奇们透露团队中有一个内奸，在众传奇中播下不信任的种子。
+									
+									寻血猎犬 尽量减少参与任务，ta派渡鸦阿特尔在众传奇分裂后收集有关他们的信息。Ta像众传奇表达了ta希望传奇们现在能团结一致以及ta对传奇们的尊重，还有对这次争执感到难过。但寻血猎犬 觉得这件事不会对自己带来任何压力，因为ta有更重要的目标。
+									
+									第10赛季
+									最终，行星收割机超载并自毁，进一步破坏了世界尽头。 作为对此的回应，哈蒙德正在努力控制他们造成的损失。他们正在利用气候调节器处迅速将该地区降温到零度以下，并建造一个熔岩虹吸管来稳定火山口。然而，有些人发言道，这些措施实际上并没有任何作用，因为气候调节器只是冷却空气，而熔岩虹吸管又将其加热回来。
+									
+									寻血猎犬对ta家乡星球的状况感到非常心烦意乱。可能是因为对叔叔的死感到内疚，ta将责任归咎于自己，宣称ta必须为自己的“罪孽”赎罪。 暴雷 注意到了ta的痛苦，并给寻血猎犬寄了一封信，信中 暴雷 对寻血猎犬的情况表示同情，同时表示自己可以提供一个可以依靠的肩膀。
+									
+									昔日之道，新黎明
+									一天，寻血猎犬 遇到了一只带有红色斑纹的白色渡鸦。在穿越世界尽头追踪一名受伤的猎兽时，ta听到乌鸦用 阿特尔 的声音对ta说话，并愤怒地斥责ta，声称寻血猎犬父母的死与ta有关。
+									
+									寻血猎犬 跟着猎兽来到了它的巢穴，ta发现它痛苦地躺在那里。与此同时，ta又听到了阿特尔的声音，批评ta放弃了昔日之道。 寻血猎犬 看到了五个幻象，每一个都是ta创伤的表现。 当阿特尔的声音斥责 寻血猎犬 辜负了ta的家、ta的家人、布恩和阿特尔时，寻血猎犬 否认了这一点，并坚定了自己的内心。
+									
+									寻血猎犬 轻抚着弥留之际的猎兽，向它保证它会光荣地进入英灵殿。
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12" style="background-color: red;color: gold;text-align: center;height: 30px;"
+								id="猎犬-pifu">皮肤展示</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<div class="image-container s5">
+									<ul class="list-group list-group-horizontal">
+										<li class="list-group-item square col-4"><img src="img/APEX猎手 等级1.png"></li>
+										<li class="list-group-item square col-4"><img src="img/APEX猎手 等级2.png"></li>
+										<li class="list-group-item square col-4"><img src="img/APEX猎手 等级3.png"></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<div class="image-container s5">
+									<ul class="list-group list-group-horizontal">
+										<li class="list-group-item square col-3"><img src="img/瘟疫医生.jpg" /></li>
+										<li class="list-group-item square col-3"><img src="img/皇家护卫.jpg" /></li>
+										<li class="list-group-item square col-3"><img src="img/符文大师.jpg" /></li>
+										<li class="list-group-item square col-3"><img src="img/帝国勇士.jpg"></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="row" id="猎犬-pingjia">
+							<div class="col-md-6" style="background-color: red;color: gold;text-align: center;height: 30px;">经典台词
+							</div>
+							<div class="col-md-6" style="background-color: red;color: gold;text-align: center;height: 30px;">锐评寻血猎犬
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="container">
+									<div class="card bg-primary text-white">
+										<div class="card-body">众神之父赐予我视野！</div>
+									</div>
+									<br>
+									<div class="card bg-success text-white">
+										<div class="card-body">我沐浴在鲜血中！</div>
+									</div>
+									<br>
+									<div class="card bg-info text-white">
+										<div class="card-body">我重伤倒地！</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div style="line-height:27px">
+									<b>优点：</b>
+									<br />
+									<p>追踪技能强大：寻血猎犬具备追踪敌人位置的特殊技能，他可以使用“眼镜蛇步枪”扫描周围的敌人，对他们的位置进行标记。这对于团队的情报收集和战术制定非常有帮助。
+									快速移动：寻血猎犬的主动技能“剑齿虎步枪”可以增加他的移动速度，使他在战斗中更加灵活和机动。</p>
+									<b>劣势：</b>
+									<br />
+									<p>生存能力较低：相比于其他角色，寻血猎犬的生存能力相对较低。他没有护盾技能或治疗技能，需要依赖队友或消耗物品来增加自身的生存能力。
+									依赖于情报：寻血猎犬的技能主要集中在情报收集和追踪上，如果没有足够的情报，他的实用性可能会大打折扣。</p>
+									<p>总体来说，寻血猎犬是一个在战斗中非常有用的角色，他擅长追踪和侦查，为团队提供宝贵的情报。不过，他也需要队友的支持和合作，以弥补他自身生存能力的不足。</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<!-- 主页 -->
-				<div id="home" class="container-fluid tab-pane fade"><br>
-					<div class="container-fluid myfox" id="欢迎" style="background-image: url(img/w.jpg);">
+				<div id="home" class="container-fluid tab-pane fade d1"><br>
+					<div class="container-fluid myfox" id="主页-欢迎" style="background-image: url(img/w.jpg);">
 						<div class="row">
 							<div class="col">
 								<div class="col-12">
@@ -575,11 +1020,12 @@
 							</div>
 						</div>
 					</div>
-					<div id="demo1" class="carousel slide" data-bs-ride="carousel">
+					<!-- 轮播 -->
+					<div id="主页-demo" class="carousel slide d1" data-bs-ride="carousel">
 						<div class="carousel-indicators">
-							<button type="button" data-bs-target="#demo1" data-bs-slide-to="0" class="active"></button>
-							<button type="button" data-bs-target="#demo1" data-bs-slide-to="1"></button>
-							<button type="button" data-bs-target="#demo1" data-bs-slide-to="2"></button>
+							<button type="button" data-bs-target="#主页-demo" data-bs-slide-to="0" class="active"></button>
+							<button type="button" data-bs-target="#主页-demo" data-bs-slide-to="1"></button>
+							<button type="button" data-bs-target="#主页-demo" data-bs-slide-to="2"></button>
 						</div>
 						<!-- 轮播图片 -->
 						<div class="carousel-inner">
@@ -594,22 +1040,359 @@
 							</div>
 						</div>
 						<!-- 左右切换按钮 -->
-						<button class="carousel-control-prev" type="button" data-bs-target="#demo1" data-bs-slide="prev">
+						<button class="carousel-control-prev" type="button" data-bs-target="#主页-demo" data-bs-slide="prev">
 							<span class="carousel-control-prev-icon"></span>
 						</button>
-						<button class="carousel-control-next" type="button" data-bs-target="#demo1" data-bs-slide="next">
+						<button class="carousel-control-next" type="button" data-bs-target="#主页-demo" data-bs-slide="next">
 							<span class="carousel-control-next-icon"></span>
 						</button>
 					</div>
-					<div class="row" style="position: fixed; top: 50%; left: 0; transform: translateY(-50%);">
-						<div class="col-4">
-							<div id="list-example" class="list-group" style="font-size: 12px;">
-								<a class="list-group-item list-group-item-action text-center s3" style="height: 70px;" href="#欢迎">顶部</a>
-								<a class="list-group-item list-group-item-action text-center s3" style="height: 70px;" href="#demo1">轮播图</a>
-								
+					<!-- 枪图鉴 -->
+					<div class="container-fluid myfox" id="主页-枪">
+						<div>
+							<div class="row mt-3">
+								<h2 class="text-center text-light bg-red rounded-5">枪械图鉴</h2>
+							</div>
+						</div>
+						<div class="container mt-3">
+							<br>
+							<!-- 导航栏 -->
+							<ul class="nav nav-tabs" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active" data-bs-toggle="tab" href="#主页-home">手枪</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" data-bs-toggle="tab" href="#主页-menu1">步枪</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" data-bs-toggle="tab" href="#主页-menu2">冲锋枪</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" data-bs-toggle="tab" href="#主页-menu3">轻机枪</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" data-bs-toggle="tab" href="#主页-menu4">霰弹枪</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" data-bs-toggle="tab" href="#主页-menu5">狙击枪</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" data-bs-toggle="tab" href="#主页-menu6">神射手</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" data-bs-toggle="tab" href="#主页-menu7">特殊</a>
+								</li>
+							</ul>
+							<div class="tab-content">
+								<!-- 手枪 -->
+								<div id="主页-home" class="container tab-pane active"><br>
+									<div class="row">
+										<div class="col text-center">
+											<div class="image-container ">
+												<ul class="list-group list-group-horizontal">
+													<li class="list-group-item square col-2">
+														<p>RE-45</p><img src="img/re45.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>P2020</p><img src="img/p2020.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>小帮手</p><img src="img/小帮手.png">
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- 步枪 -->
+								<div id="主页-menu1" class="container tab-pane fade"><br>
+									<div class="row">
+										<div class="col text-center">
+											<div class="image-container ">
+												<ul class="list-group list-group-horizontal">
+													<li class="list-group-item square col-2">
+														<p>VK-47平行步枪</p><img src="img/平行.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>赫姆洛克步枪</p><img src="img/汗落.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>R-301自动步枪</p><img src="img/301.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>哈沃克步枪</p><img src="img/哈沃克.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>复仇女神连发突击步枪</p><img src="img/死敌.png">
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- 冲锋枪 -->
+								<div id="主页-menu2" class="container tab-pane fade"><br>
+									<div class="row">
+										<div class="col text-center">
+											<div class="image-container ">
+												<ul class="list-group list-group-horizontal">
+													<li class="list-group-item square col-2">
+														<p>R-99冲锋枪</p><img src="img/r99.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>猎兽冲锋枪</p><img src="img/猎兽.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>转换者冲锋枪</p><img src="img/转换者.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>电能冲锋枪</p><img src="img/电冲.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>C.A.R冲锋枪</p><img src="img/car.png">
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- 轻机枪 -->
+								<div id="主页-menu3" class="container tab-pane fade"><br>
+									<div class="row">
+										<div class="col text-center">
+											<div class="image-container ">
+												<ul class="list-group list-group-horizontal">
+													<li class="list-group-item square col-2">
+														<p>专注轻机枪</p><img src="img/专注.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>喷火轻机枪</p><img src="img/喷火.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>L-star轻机枪</p><img src="img/150px-L-Star_Icon.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p> 暴走轻机枪</p><img src="img/暴走.png">
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- 霰弹枪 -->
+								<div id="主页-menu4" class="container tab-pane fade"><br>
+									<div class="row">
+										<div class="col text-center">
+											<div class="image-container ">
+												<ul class="list-group list-group-horizontal">
+													<li class="list-group-item square col-2">
+														<p>敖犬霰弹枪</p><img src="img/獒犬.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>EVA-8霰弹枪</p><img src="img/eva.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>和平捍卫者霰弹枪</p><img src="img/和平.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>莫桑比克霰弹枪</p><img src="img/莫桑.png">
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- 狙击枪 -->
+								<div id="主页-menu5" class="container tab-pane fade"><br>
+									<div class="row">
+										<div class="col text-center">
+											<div class="image-container ">
+												<ul class="list-group list-group-horizontal">
+													<li class="list-group-item square col-2">
+														<p>充能狙击枪</p><img src="img/兹蹦.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>哨兵狙击枪</p><img src="img/哨兵.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>克雷贝尔狙击枪</p><img src="img/科莱博.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>长弓DMR狙击枪</p><img src="img/长工.png">
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- 神射手 -->
+								<div id="主页-menu6" class="container tab-pane fade"><br>
+									<div class="col text-center">
+										<div class="image-container ">
+											<ul class="list-group list-group-horizontal">
+												<li class="list-group-item square col-2">
+													<p>波塞克复合弓</p><img src="img/屎.png">
+												</li>
+												<li class="list-group-item square col-2">
+													<p>三重式狙击枪</p><img src="img/三重.png">
+												</li>
+												<li class="list-group-item square col-2">
+													<p>G7侦查步枪</p><img src="img/g7.png">
+												</li>
+												<li class="list-group-item square col-2">
+													<p>30-30连发枪</p><img src="img/3030.png">
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!-- 特殊 -->
+								<div id="主页-menu7" class="container tab-pane fade"><br>
+									<div class="col text-center">
+										<div class="image-container ">
+											<ul class="list-group list-group-horizontal">
+												<li class="list-group-item square col-2">
+													<p>手感卓越的刀刃</p><img src="img/刀.png">
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 角色图鉴 -->
+						<div class="container-fluid myfox" id="主页-角色">
+							<div>
+								<div class="row mt-3">
+									<h2 class="text-center text-light bg-red rounded-5">角色图鉴</h2>
+								</div>
+							</div>
+							<div class="tab-content">
+
+								<div id="主页-home" class="container tab-pane active"><br>
+									<div class="row">
+										<div class="col text-center">
+											<div class="image-container ">
+												<ul class="list-group list-group-horizontal">
+													<li class="list-group-item square col-2">
+														<p>寻血猎犬</p><img src="img/狗子.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>直布罗陀</p><img src="img/胖子.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>命脉</p><img src="img/doc.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>探路者</p><img src="img/机器人.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>恶灵</p><img src="img/恶灵.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>班加罗尔</p><img src="img/烟妹.png">
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col text-center">
+											<div class="image-container ">
+												<ul class="list-group list-group-horizontal">
+													<li class="list-group-item square col-2">
+														<p>侵蚀</p><img src="img/屁男.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>幻像</p><img src="img/幻像.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>动力小子</p><img src="img/动力.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>沃特森</p><img src="img/dianmei.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>秘客</p><img src="img/emp.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>亡灵</p><img src="img/亡灵.png">
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col text-center">
+											<div class="image-container ">
+												<ul class="list-group list-group-horizontal">
+													<li class="list-group-item square col-2">
+														<p>罗芭</p><img src="img/老八.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>兰伯特</p><img src="img/兰伯特.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>地平线</p><img src="img/地平线n.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>暴雷</p><img src="img/暴雷.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>瓦尔基里</p><img src="img/挖机.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>希尔</p><img src="img/希尔.png">
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col text-center">
+											<div class="image-container ">
+												<ul class="list-group list-group-horizontal">
+													<li class="list-group-item square col-2">
+														<p>艾许</p><img src="img/艾许.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>疯玛吉</p><img src="img/麻吉.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>纽卡斯尔</p><img src="img/纽卡.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>万蒂奇</p><img src="img/万蒂奇.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>卡特莉丝</p><img src="img/卡特莉丝.png">
+													</li>
+													<li class="list-group-item square col-2">
+														<p>弹道</p><img src="img/弹道.png">
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
+					<!-- 定位 -->
+					<div class="row" style="position: fixed; top: 50%; left: 0; transform: translateY(-50%);">
+						<div class="col-4">
+							<div id="list-example" class="list-group" style="font-size: 12px;">
+								<a class="list-group-item list-group-item-action text-center s3" style="height: 70px;" href="#主页-欢迎">顶部</a>
+								<a class="list-group-item list-group-item-action text-center s3" style="height: 70px;" href="#主页-demo">轮播图</a>
+								<a class="list-group-item list-group-item-action text-center s3" style="height: 70px;" href="#主页-枪">枪械</a>
+								<a class="list-group-item list-group-item-action text-center s3" style="height: 70px;" href="#主页-角色">角色</a>
+							</div>
+						</div>
+					</div>
+					<br />
+					<br />
+					<br />
+					<br />
 				</div>
 			</div>
 		</div>
@@ -659,7 +1442,7 @@
 				<p>生日：12/16</p>
 			</div>
 			<div class="offcanvas-header d-flex justify-content-center" style="height: 20px;">
-				<p>爱好：懒得写</p>
+				<p>爱好：玩APEX</p>
 			</div>
 		</div>
 		<script>
